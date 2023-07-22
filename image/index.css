@@ -12,6 +12,7 @@
   // --shadowColor: rgba(128, 128, 128, 0.1) !important;
   --dividerColor: rgba(255, 255, 255, 0.1) !important;
   --maskColor: rgba(33, 33, 33, 0.8) !important;
+  --placeholderColor: #7a7a7ad9 !important;
 }
 
 .side-bar-container,
@@ -29,10 +30,6 @@
   backdrop-filter: blur(10px) !important;
 }
 
-input {
-  background-color: #424242 !important;
-  color: var(--textColor);
-}
 
 input + svg {
   color: white !important;
