@@ -1,6 +1,6 @@
 {
     "name": "樱花",
-    "preview": "#000",
+    "preview": "@/imgs/preview.png",
     "iframe": {
         "app": "@/iframes/app.html"
     }

@@ -1,6 +1,7 @@
 {
     "name": "fliqlo",
-    "preview": "#000",
+    "preview": "@/imgs/preview.png",
+    "description": "类似fliqlo的效果",
     "iframe": {
         "app": "@/iframes/app.html"
     }
