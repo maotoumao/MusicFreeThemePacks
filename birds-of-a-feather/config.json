@@ -1,0 +1,7 @@
+{
+    "name": "飞鸟",
+    "preview": "@/imgs/preview.png",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
+}
