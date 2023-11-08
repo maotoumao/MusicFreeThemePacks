@@ -1,7 +1,7 @@
 # MusicFree 桌面版的主题包
 
 ## 使用方法（0.0.2及以上版本）
-1. 下载 https://wwwzb.lanzoue.com/i9eDT1dowk7i，并解压
+1. 下载 [主题包](https://wwwzb.lanzoue.com/i9eDT1dowk7i)，并解压
 
 2. 点击 + 号安装主题，安装解压文件夹内的 .mftheme 文件
 
