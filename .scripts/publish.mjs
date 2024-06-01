@@ -41,6 +41,7 @@ async function publish() {
             return {
                 publishName: outputName,
                 packageName: folder.name,
+                hash,
                 config,
             }
 
