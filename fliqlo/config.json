@@ -2,6 +2,7 @@
     "name": "fliqlo",
     "preview": "@/imgs/preview.png",
     "description": "类似fliqlo的效果",
+    "author": "猫头猫",
     "iframe": {
         "app": "@/iframes/app.html"
     }

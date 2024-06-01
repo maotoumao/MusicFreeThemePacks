@@ -1,0 +1,17 @@
+{
+  "name": "musicfree-themepacks",
+  "version": "1.0.0",
+  "description": "MusicFree主题包",
+  "scripts": {
+    "publish": "node ./.scripts/publish.mjs"
+  },
+  "keywords": [],
+  "author": "maotoumao",
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "crypto-js": "^4.2.0",
+    "nanoid": "^5.0.7",
+    "rimraf": "^5.0.7"
+  }
+}
