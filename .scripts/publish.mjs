@@ -18,7 +18,7 @@ async function publish() {
         try {
             const configFile = await fs.readFile(`./${folder.name}/config.json`);
 
-            const hash = CryptoJS.MD5(`./${folder.name}/config.json`).toString();
+            const hash = CryptoJS.MD5(configFile).toString(CryptoJS.enc.Hex);
 
             const archive = archiver('zip');
             const outputName = `${folder.name}-${hash}`;
