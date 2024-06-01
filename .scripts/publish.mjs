@@ -37,6 +37,7 @@ async function publish() {
             await promise;
 
             const config = JSON.parse(configFile);
+            config.hash = hash;
             
             return {
                 publishName: outputName,
