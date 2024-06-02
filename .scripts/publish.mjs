@@ -16,7 +16,7 @@ async function publish() {
     })).filter(it => it.isDirectory() && !it.name.startsWith('.') && !exceptionFolders.includes(it.name)).sort((a, b) => a.name.localeCompare(b.name));
     const themeConfigs = await Promise.all(validFolders.map(async folder => {
         try {
-            const configFile = await fs.readFile(`./${folder.name}/config.json`);
+            const configFile = await fs.readFile(`./${folder.name}/config.json`, 'utf-8');
 
             const hash = CryptoJS.MD5(configFile).toString(CryptoJS.enc.Hex);
 
