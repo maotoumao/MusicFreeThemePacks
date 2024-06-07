@@ -1,0 +1,40 @@
+:root {
+  --textColor: #fcfcfc !important;
+  --textSecondaryColor: #aaaaaa !important;
+  --backgroundColor: #000 !important;
+  --shadowColor: rgba(0, 0, 0, 0.3) !important;
+  --dividerColor: rgba(255, 255, 255, 0.1) !important;
+  --maskColor: rgba(33, 33, 33, 0.2) !important;
+  --backdropColor: #333 !important;
+  --primaryColor:  #3a9954 !important;
+
+  --listHoverColor: rgba(255, 255, 255, 0.05) !important;
+  --listActiveColor: rgba(255, 255, 255, 0.1) !important;
+  --placeholderColor: #dededeba !important;
+
+}
+
+
+.music-detail-background {
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+  opacity: 0.2 !important;
+}
+
+.header-container,
+.music-bar-container {
+  background-color: transparent !important;
+  backdrop-filter: blur(10px);
+}
+
+
+.body-container {
+  background-color: #00000099 !important;
+  backdrop-filter: blur(2px);
+}
+
+
+
+a {
+    color: #8bd1ed !important;
+}
