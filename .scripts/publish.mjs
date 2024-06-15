@@ -3,13 +3,25 @@ import fs from 'fs/promises';
 import archiver from 'archiver';
 import { rimraf } from 'rimraf';
 import CryptoJS from 'crypto-js';
+import { nanoid } from 'nanoid';
 
 const exceptionFolders = ['node_modules'];
+
+function safeParse(str) {
+    try {
+        return JSON.parse(str);
+    } catch {
+        return {};
+    }
+}
 
 async function publish() {
     await rimraf('./.publish/*', {
         'glob': true
     });
+
+    const metaConfig = await fs.readFile("./meta.json", 'utf-8');
+    const meta = safeParse(metaConfig);
 
     const validFolders = (await fs.readdir('.', {
         'withFileTypes': true
@@ -38,12 +50,21 @@ async function publish() {
 
             const config = JSON.parse(configFile);
             config.hash = hash;
+
+            // meta
+            const themeMeta = meta[folder.name] || {};
+            if (!themeMeta.id) {
+                themeMeta.id = nanoid();
+            }
+
+            meta[folder.name] = themeMeta;
             
             return {
                 publishName: outputName,
                 packageName: folder.name,
                 hash,
                 config,
+                ...themeMeta,                
             }
 
         } catch(e) {
@@ -53,6 +74,7 @@ async function publish() {
         }
     }))
     await fs.writeFile('./.publish/publish.json', JSON.stringify(themeConfigs), 'utf-8');
+    await fs.writeFile('./meta.json', JSON.stringify(meta, undefined, 4), 'utf-8');
 
     console.log("Publish Done");
 
