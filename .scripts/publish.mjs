@@ -19,6 +19,9 @@ async function publish() {
     await rimraf('./.publish/*', {
         'glob': true
     });
+    await rimraf('./.temp/*', {
+        'glob': true
+    });
 
     const metaConfig = await fs.readFile("./meta.json", 'utf-8');
     const meta = safeParse(metaConfig);
@@ -28,9 +31,31 @@ async function publish() {
     })).filter(it => it.isDirectory() && !it.name.startsWith('.') && !exceptionFolders.includes(it.name)).sort((a, b) => a.name.localeCompare(b.name));
     const themeConfigs = await Promise.all(validFolders.map(async folder => {
         try {
-            const configFile = await fs.readFile(`./${folder.name}/config.json`, 'utf-8');
+            const themeMeta = meta[folder.name] || {};
+            meta[folder.name] = themeMeta;
 
-            const hash = CryptoJS.MD5(configFile).toString(CryptoJS.enc.Hex);
+            // INIT META
+            if (!themeMeta.id) {
+                themeMeta.id = nanoid();
+            }
+
+            // copy to temp folder
+            await fs.cp(`./${folder.name}`, `./.temp/${folder.name}`, {
+                recursive: true
+            });
+            
+
+            const rawConfig = JSON.parse(await fs.readFile(`./${folder.name}/config.json`, 'utf-8'));
+
+            const mergedConfig = {
+                ...rawConfig,
+                ...themeMeta
+            };
+
+            const mergedConfigStr = JSON.stringify(mergedConfig);
+            await fs.writeFile(`./.temp/${folder.name}/config.json`, mergedConfigStr, 'utf-8');
+            
+            const hash = CryptoJS.MD5(mergedConfigStr).toString(CryptoJS.enc.Hex);
 
             const archive = archiver('zip');
             const outputName = `${folder.name}-${hash}`;
@@ -44,33 +69,23 @@ async function publish() {
 
 
             archive.pipe(output);
-            archive.directory(`./${folder.name}`, false);
+            archive.directory(`./.temp/${folder.name}`, false);
             archive.finalize();
             await promise;
 
-            const config = JSON.parse(configFile);
-            config.hash = hash;
-
-            // meta
-            const themeMeta = meta[folder.name] || {};
-            if (!themeMeta.id) {
-                themeMeta.id = nanoid();
-            }
-
-            meta[folder.name] = themeMeta;
             
             return {
                 publishName: outputName,
                 packageName: folder.name,
                 hash,
-                config,
-                ...themeMeta,                
+                config: mergedConfig,
+                ...themeMeta         
             }
 
         } catch(e) {
-            // ignore
-            console.log(2, e)
             return null;
+        } finally {
+            await rimraf(`./.temp/${folder.name}`);
         }
     }))
     await fs.writeFile('./.publish/publish.json', JSON.stringify(themeConfigs), 'utf-8');
