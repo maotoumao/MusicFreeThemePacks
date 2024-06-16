@@ -38,3 +38,7 @@
 a {
     color: #8bd1ed !important;
 }
+
+::-webkit-scrollbar-thumb {
+  background-color: #89949587 !important;
+} 
