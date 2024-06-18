@@ -1,5 +1,5 @@
 # MusicFree 桌面版的主题包
-
+本项目只是个人学习记录一下
 ## 使用方法
 1. 下载 [主题包](https://www.lanzoub.com/irK5a226qnyj)，并解压
 
