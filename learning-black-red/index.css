@@ -1,0 +1,74 @@
+:root {
+  /*软件内所有字体颜色*/
+  --textColor: rgb(180, 180, 180) !important;
+
+  --textSecondaryColor: rgb(180, 180, 180) !important;
+
+  /*整个软件背景颜色*/
+  --backgroundColor: rgb(0, 0, 0) !important;
+
+  /*弹出层阴影颜色*/
+  --shadowColor: rgb(54, 54, 54) !important;
+
+  /*分隔线颜色*/
+  --dividerColor: rgb(65, 65, 65) !important;
+
+  /*遮罩颜色*/
+  --maskColor: rgb(18, 18, 18) !important;
+
+  /*弹出层背景颜色*/
+  --backdropColor: rgb(0, 0, 0) !important;
+
+  /*鼠标悬停列表后背景颜色*/
+  /* --listHoverColor: rgb(18, 18, 18) !important; */
+  --listHoverColor: none !important;
+
+  /*选中列表后颜色*/
+  /* --listActiveColor: rgb(18, 18, 18) !important; */
+  --listActiveColor: none !important;
+
+  /*占位符颜色【快捷键】*/
+  --placeholderColor: rgb(65, 65, 65) !important;
+
+  /*软件最底层颜色*/
+  --primaryColor: rgb(125, 0, 0) !important;
+}
+
+
+/*音乐详情页背景*/
+.music-detail-background {
+  background: rgb(20, 20, 20) !important;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+}
+
+/*头部*/
+.header-container,
+.music-bar-container {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+/*中间*/
+.body-container {
+  background-color: rgb(20, 20, 20);
+}
+
+/*输入框*/
+input+svg {
+  color: rgb(180, 180, 180) !important;
+  opacity: 0.1 !important;
+}
+
+/*搜索框*/
+.header-search {
+  background-color: rgb(20, 20, 20) !important;
+}
+
+.header-search input {
+  background-color: transparent !important;
+}
+
+/*软件内设计到超链接的字体颜色*/
+a {
+  color: rgb(200, 120, 30) !important;
+}
