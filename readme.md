@@ -5,7 +5,7 @@
 - <a href = "https://github.com/maotoumao/MusicFreeDesktop/releases">MusicFreeDesktop下载</a>
 
 ## 使用方法
-1. 下载 [主题包](https://www.lanzoub.com/irK5a226qnyj)，并解压
+1. 下载release并解压
 
 2. 点击 + 号安装主题，安装解压文件夹内的 .mftheme 文件
 
@@ -14,7 +14,7 @@
 4. 若要卸载主题，右键主题
 
 ##  运行项目
-项目运行前提确保设备已经安装nodejs
+如果你想自己制作主题，将项目下载下来，在vscode中打开，项目运行前请确保设备已安装nodejs
 ```
     npm install
     npm run publish
