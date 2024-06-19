@@ -2,10 +2,10 @@
 本项目只是个人学习记录一下
 
 ## 播放器下载
-<a href = "https://github.com/maotoumao/MusicFreeDesktop/releases">MusicFreeDesktop下载</a>
+<a href = "https://github.com/maotoumao/MusicFreeDesktop/releases/latest">MusicFreeDesktop下载</a>
 
 ## 使用方法
-1. 下载release并解压
+1. 下载<a href = "https://github.com/Hopelsz/MusicFreeThemePacks/releases/latest">release</a>并解压
 
 2. 点击 + 号安装主题，安装解压文件夹内的 .mftheme 文件
 
