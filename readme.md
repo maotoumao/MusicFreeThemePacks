@@ -10,8 +10,10 @@
 
 ##  运行项目
 项目运行前提确保设备已经安装nodejs
+```
         npm install
         npm run publish
+```
 
 
 ##  自己制作
