@@ -29,6 +29,7 @@
 <br/>
 <img src="https://github.com/Hopelsz/MusicFreeThemePacks/assets/48856718/8384fcf7-581a-43fa-987b-14280ce588b9)" width = 70% height = 70%/>
 <br/>
-
+<img src="https://github.com/Hopelsz/MusicFreeThemePacks/assets/48856718/75069ecf-4e0a-483e-8c0a-c59e754d22ca" width = 70% height = 70%/>
+<br/>
 
 本项目复刻自maotoumao的项目https://github.com/maotoumao/MusicFreeThemePacks
