@@ -2,7 +2,7 @@
 本项目只是个人学习记录一下
 
 ## 播放器下载
-- <a href = "https://github.com/maotoumao/MusicFreeDesktop/releases">MusicFreeDesktop下载</a>
+<a href = "https://github.com/maotoumao/MusicFreeDesktop/releases">MusicFreeDesktop下载</a>
 
 ## 使用方法
 1. 下载release并解压
