@@ -10,8 +10,8 @@
 
 ##  运行项目
 项目运行前提确保设备已经安装nodejs
->   `**npm install**` <br/>
->   `**npm run publish**`
+>   `npm install` <br/>
+>   `npm run publish`
 
 ##  自己制作
 1.  新建文件夹，文件名尽量与自己主题名保持一致
