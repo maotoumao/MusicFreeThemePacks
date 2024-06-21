@@ -1,6 +1,6 @@
 {
-    "name": "learning-black-red",
-    "preview": "#000000",
+    "name": "黑红",
+    "preview": "@/assets/black-red.png",
     "author":"hope",
     "description": "第一次学习更改musicFree主题,黑红配色，凑合着看吧"
 }
