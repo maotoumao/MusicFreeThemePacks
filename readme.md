@@ -28,11 +28,13 @@
 4.  制作完成使用`npm run publish`运行项目，新的主题文件生成存放在`.publish`文件夹下
 <br/>
 
-<img src="https://github.com/Hopelsz/MusicFreeThemePacks/assets/48856718/cee6a3fc-e96d-44c7-8f5b-b731a328c48f" width = 70% height = 70%/>
-<br/>
 <img src="https://github.com/Hopelsz/MusicFreeThemePacks/assets/48856718/8384fcf7-581a-43fa-987b-14280ce588b9)" width = 70% height = 70%/>
 <br/>
 <img src="https://github.com/Hopelsz/MusicFreeThemePacks/assets/48856718/75069ecf-4e0a-483e-8c0a-c59e754d22ca" width = 70% height = 70%/>
+<br/>
+<img src="https://github.com/Hopelsz/MusicFreeThemePacks/assets/48856718/6227bb7f-eb47-45f9-863d-46b5bab56bc8" width = 70% height = 70%/>
+<br/>
+<img src="https://github.com/Hopelsz/MusicFreeThemePacks/assets/48856718/0ffe643b-5c2e-4645-8b76-e974df1237ba" width = 70% height = 70%/>
 <br/>
 
 本项目复刻自maotoumao的项目https://github.com/maotoumao/MusicFreeThemePacks
