@@ -8,7 +8,7 @@
   --textColor: #ffffff !important;    /*文本颜色*/
   --primaryColor: #f5abff !important;   /*主要颜色*/
   --hoverColor: rgb(76, 112, 136) !important;   /*鼠标悬停列表上的颜色*/
-  --backgroundColor: #c79ba5  !important;    /*歌曲详情背景色，搜索的下拉框，主题的右键颜色*/
+  --backgroundColor: #386892  !important;    /*歌曲详情背景色，搜索的下拉框，主题的右键颜色*/
   /* // --shadowColor: rgba(128, 128, 128, 0.1) !important; */
   --dividerColor: rgba(255, 255, 255, 0) !important;   /*分割线的颜色*/
   /* --maskColor: rgba(255, 255, 255, 0.8) !important;    从网络安装插件弹出的蒙层颜色 */
