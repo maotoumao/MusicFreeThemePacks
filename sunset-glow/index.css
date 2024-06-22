@@ -1,0 +1,27 @@
+#root {
+  background: url("@/assets/Sunsetglow.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+:root {
+  --textColor: #ffffff !important;
+  --primaryColor: #f5abff !important;
+  --hoverColor: rgb(76, 112, 136) !important;
+  --backgroundColor: #386892 !important;
+  --dividerColor: rgba(255, 255, 255, 0) !important;
+  --placeholderColor: rgba(68, 99, 134, 0) !important;
+}
+
+.header-container,
+.music-bar-container {
+  background-color: rgba(33, 33, 33, 0) !important;
+}
+
+.header-search {
+  background-color: #4c789e38 !important;
+}
+
+a {
+  color: #6eff81 !important;
+}

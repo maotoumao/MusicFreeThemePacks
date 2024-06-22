@@ -1,0 +1,37 @@
+#root {
+    background: url("@/assets/Pirates.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+:root {
+    --textColor: #ffffff !important;
+    --primaryColor: #7E98FF !important;
+    --hoverColor: rgb(76, 112, 136) !important;
+    --backgroundColor: #315472 !important;
+    --dividerColor: rgba(255, 255, 255, 0.05) !important;
+    --placeholderColor: rgba(68, 99, 134, 0) !important;
+}
+
+
+.side-bar--list-item-container[data-selected="true"] {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+
+input+svg {
+    color: #365C7D !important;
+    opacity: 0.7 !important;
+}
+
+.header-search {
+    background-color: #315472ad !important;
+}
+
+.header-search input {
+    background-color: transparent !important;
+}
+
+a {
+    color: #6eff81 !important;
+}
