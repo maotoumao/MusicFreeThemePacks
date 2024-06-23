@@ -1,0 +1,58 @@
+:root {
+  --textColor: rgb(180, 180, 180) !important;
+
+  --textSecondaryColor: rgb(180, 180, 180) !important;
+
+  --backgroundColor: rgb(0, 0, 0) !important;
+
+  --shadowColor: rgb(54, 54, 54) !important;
+
+  --dividerColor: rgb(65, 65, 65) !important;
+
+  --maskColor: rgb(18, 18, 18) !important;
+
+  --backdropColor: rgb(0, 0, 0) !important;
+
+  --listHoverColor: none !important;
+
+  --listActiveColor: none !important;
+
+  --placeholderColor: rgb(65, 65, 65) !important;
+  --primaryColor: rgb(125, 0, 0) !important;
+}
+
+
+/*音乐详情页背景*/
+.music-detail-background {
+  background: rgb(20, 20, 20) !important;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+}
+
+.header-container,
+.music-bar-container {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.body-container {
+  background-color: rgb(20, 20, 20);
+}
+
+input+svg {
+  color: rgb(180, 180, 180) !important;
+  opacity: 0.1 !important;
+}
+
+/*搜索框*/
+.header-search {
+  background-color: rgb(20, 20, 20) !important;
+}
+
+.header-search input {
+  background-color: transparent !important;
+}
+
+/*软件内涉及到超链接的字体颜色*/
+a {
+  color: rgb(200, 120, 30) !important;
+}
