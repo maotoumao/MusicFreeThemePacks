@@ -1,0 +1,66 @@
+/* :root {
+  --primaryColor: #f17d34; // 主色调
+  --backgroundColor: #fdfdfd; // 背景色
+  --dividerColor: rgba(0, 0, 0, 0.1); // 分割线颜色
+  --listHoverColor: rgba(0, 0, 0, 0.05); // 列表悬浮颜色
+  --listActiveColor: rgba(0, 0, 0, 0.1); // 列表选中颜色
+  --textColor: #333333; // 主文本颜色
+  --maskColor: rgba(51, 51, 51, 0.2); // 遮罩层颜色
+  --shadowColor: rgba(0, 0, 0, 0.2); // 对话框等阴影颜色
+  --placeholderColor: #f4f4f4; // 输入区背景颜色
+  --successColor: #08A34C; // 成功颜色
+  --dangerColor: #FC5F5F; // 危险颜色
+  --infoColor: #0A95C8; // 通知颜色
+  --headerTextColor: white; // 顶部文本颜色
+} */
+:root {
+  --textColor: #000000 !important;
+  --textSecondaryColor: #383838 !important;
+  --backgroundColor: #ffffff !important;
+  --shadowColor: rgba(0, 0, 0, 0.15) !important;
+  --dividerColor: #e8e8e8 !important;
+  --maskColor: rgba(33, 33, 33, 0.8) !important;
+  --backdropColor: #ffffff !important;
+  --primaryColor: #FD3D49 !important;
+  --listHoverColor: rgba(255, 255, 255, 0.05) !important;
+  --listActiveColor: rgba(255, 255, 255, 0.1) !important;
+  --placeholderColor: #aaaaaa !important;
+  --headerTextColor: #aaaaaa !important;
+}
+
+.music-detail-container {
+  background: rgba(37, 18, 18, 0.05) !important;
+  backdrop-filter: blur(75px);
+  -webkit-backdrop-filter: blur(75px);
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+}
+
+.header-container {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(75px);
+    -webkit-backdrop-filter: blur(75px);
+}
+.music-bar-container {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(75px);
+    -webkit-backdrop-filter: blur(75px);
+}
+
+input + svg {
+  color: #757575 !important;
+  opacity: 0.7 !important;
+}
+
+.header-search {
+  background-color: #eeeeee !important;
+  border: 1px solid #eeeeee !important;
+}
+
+.header-search input {
+  background-color: transparent !important;
+}
+
+a {
+  color: #FD3D49 !important;
+}
