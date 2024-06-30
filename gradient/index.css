@@ -1,0 +1,55 @@
+#root {
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+:root {
+  --textColor: #0B214B !important;
+  --textSecondaryColor: #383838 !important;
+  --backgroundColor: #7FB6BE  !important;
+  --shadowColor: rgba(0, 0, 0, 0.15) !important;
+  --dividerColor: #e8e8e8 !important;
+  --maskColor: rgba(255, 255, 255, 0.3) !important;
+  --backdropColor: rgba(255,255,255) !important;
+  --primaryColor: #BED9B0 !important;
+  --listHoverColor: rgba(255, 255, 255, 0.05) !important;
+  --listActiveColor: rgba(255, 255, 255, 0.1) !important;
+  --placeholderColor: transparent !important;
+  --headerTextColor: black !important;
+  
+}
+
+/*音乐详情页背景*/
+.music-detail-background {
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%) !important;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+}
+
+.header-container {
+  background-color: #97D9E1 !important;
+}
+
+.music-bar-container {
+  background-color: #D9AFD9 !important;
+}
+
+input+svg {
+  color: rgb(180, 180, 180) !important;
+  opacity: 0.1 !important;
+}
+
+/*搜索框*/
+.header-search {
+  background-color: #D9AFD9 !important;
+}
+
+.header-search input {
+  background-color: transparent !important;
+}
+
+/*软件内涉及到超链接的字体颜色*/
+a {
+  color: rgb(200, 120, 30) !important;
+}
