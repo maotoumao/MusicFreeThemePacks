@@ -25,7 +25,7 @@
   --listHoverColor: rgba(255, 255, 255, 0.05) !important;
   --listActiveColor: rgba(255, 255, 255, 0.1) !important;
   --placeholderColor: #aaaaaa !important;
-  --headerTextColor: #aaaaaa !important;
+  --headerTextColor: #000000 !important;
 }
 
 .music-detail-container {
@@ -34,17 +34,19 @@
   -webkit-backdrop-filter: blur(75px);
   mask-image: none !important;
   -webkit-mask-image: none !important;
+  top: -64px!important;
+  bottom: -64px!important;
+  padding-top: 64px!important;
 }
 
-.header-container {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(75px);
-    -webkit-backdrop-filter: blur(75px);
+.hide-music-detail {
+  top: 100px !important;
 }
+
+.header-container,
 .music-bar-container {
-    background-color: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(75px);
-    -webkit-backdrop-filter: blur(75px);
+  background-color: transparent !important;
+  backdrop-filter: blur(1px);
 }
 
 input + svg {
