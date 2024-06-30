@@ -49,6 +49,10 @@
   backdrop-filter: blur(1px);
 }
 
+.header-navigator .navigator-btn {
+  border: 1px solid #999 !important;
+}
+
 input + svg {
   color: #757575 !important;
   opacity: 0.7 !important;
