@@ -1,0 +1,115 @@
+/* :root {
+  --primaryColor: #f17d34; // 主色调
+  --backgroundColor: #fdfdfd; // 背景色
+  --dividerColor: rgba(0, 0, 0, 0.1); // 分割线颜色
+  --listHoverColor: rgba(0, 0, 0, 0.05); // 列表悬浮颜色
+  --listActiveColor: rgba(0, 0, 0, 0.1); // 列表选中颜色
+  --textColor: #333333; // 主文本颜色
+  --maskColor: rgba(51, 51, 51, 0.2); // 遮罩层颜色
+  --shadowColor: rgba(0, 0, 0, 0.2); // 对话框等阴影颜色
+  --placeholderColor: #f4f4f4; // 输入区背景颜色
+  --successColor: #08A34C; // 成功颜色
+  --dangerColor: #FC5F5F; // 危险颜色
+  --infoColor: #0A95C8; // 通知颜色
+  --headerTextColor: white; // 顶部文本颜色
+} */
+#root {
+    background: url("@/imgs/fantasy-world.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+#root *::-webkit-scrollbar {
+    display: none !important;
+}
+
+
+:root {
+    --listActiveColor: transparent !important;
+    --listHoverColor: transparent !important;
+    --textColor: #ffffff !important;
+    --primaryColor: rgb(35, 201, 243) !important;
+    --hoverColor: rgb(17, 26, 35) !important;
+    --backgroundColor: rgb(17, 26, 35) !important;
+    --dividerColor: transparent !important;
+    --placeholderColor: transparent !important;
+}
+
+.header-container,
+.music-bar-container {
+    background-color: transparent !important;
+    /* backdrop-filter: blur(10px) !important; */
+}
+
+.header-search {
+    background-color: #4c789e38 !important;
+}
+
+a {
+    color: #6eff81 !important;
+}
+
+/* #root:hover .music-detail-container { */
+/* position: initial !important; */
+/* z-index: inherit !important; */
+/* left: unset !important;
+    right: unset !important;
+    top: unset !important;
+    bottom: unset !important; */
+/* } */
+
+.music-detail-container {
+    background-image: url("@/imgs/fantasy-world.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    top: -54px !important;
+    bottom: -64px !important;
+    padding-top: 64px !important;
+}
+
+.hide-music-detail {
+    top: 100px !important;
+    right: 100px !important;
+}
+
+.music-album-options {
+    display: none !important;
+}
+
+.lyric-container {
+    /* background-color: red !important; */
+    height: 280px !important;
+    margin-top: 40px !important;
+    line-height: 30px !important;
+}
+
+/* 歌词翻译角标位置 */
+.lyric-options-container {
+    /* background-color: red !important; */
+    bottom: 100px !important;
+}
+
+/* 歌词翻译角标大小 */
+.lyric-option-item {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+/* .lyric-container-outer .lyric-item[data-highlight="true"] {
+    color: transparent !important;
+    background: linear-gradient(90deg, #f00 200px, #132 0px);
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: #0cf !important;
+    animation: coloAni linear 3s;
+}
+
+@keyframes colorAni {
+    form {
+        background-size: 0 100%;
+    }
+
+    to {
+        background: 100% 100%
+    }
+} */
