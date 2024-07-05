@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <title>tubelight text animation</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+
+    </head>
+    <body>
+        <h2  data-text="anything">MYGO!!!!!</h2>
+
+        <script>
+            document.querySelectorAll('h2').forEach(h2 => {
+                h2.setAttribute('data-text', h2.textContent);
+            });
+        </script>
+        
+    </body>
+<html>

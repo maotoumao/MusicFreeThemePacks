@@ -1,0 +1,27 @@
+:root {
+    --primaryColor: #03bef4 !important; 
+    --dividerColor: rgba(0, 0, 0, 0.1) !important; 
+    --listHoverColor: rgba(0, 0, 0, 0.05) !important; 
+    --listActiveColor: rgba(0, 0, 0, 0.40) !important; 
+    --textColor: #fff !important; 
+    --maskColor: rgba(51, 51, 51, 0.2) !important; 
+    --shadowColor: rgba(0, 0, 0, 0.2) !important;
+    --backgroundColor: #07252d !important; 
+    }
+    
+    .header-container, 
+    .music-bar-container {
+      background-color: transparent !important;
+    }
+    
+    .body-container {
+      background-color: rgba(0, 0, 0, 0.15) !important;
+    }
+    
+    /*音乐详情页背景*/
+    .music-detail-background {
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+    }
+    
+    
