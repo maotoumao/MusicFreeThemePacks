@@ -6,7 +6,8 @@
     --textColor: #fff !important; 
     --maskColor: rgba(51, 51, 51, 0.2) !important; 
     --shadowColor: rgba(0, 0, 0, 0.2) !important;
-    --backgroundColor: #07252d !important; 
+    --backgroundColor: #07252d !important;
+    --placeholderColor: rgba(0,0,0,0.2) !important; 
     }
     
     .header-container, 

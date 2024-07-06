@@ -22,7 +22,6 @@
 
 /*音乐详情页背景*/
 .music-detail-background {
-  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%) !important;
   mask-image: none !important;
   -webkit-mask-image: none !important;
 }
