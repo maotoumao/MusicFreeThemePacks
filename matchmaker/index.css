@@ -68,3 +68,15 @@ a {
   right: 100px !important;
   top: 100px !important;
 }
+
+/* 歌词高亮 */
+.lyric-item {
+  opacity: 0.2 !important;
+
+  &[data-highlight="true"] {
+    color: greenyellow !important;
+    font-size: 1.2em !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+  }
+}

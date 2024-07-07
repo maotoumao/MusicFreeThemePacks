@@ -61,3 +61,20 @@ a {
   top: 100px !important;
   right: 100px !important;
 }
+
+/* 歌词高亮 */
+.lyric-item {
+  opacity: 0.2 !important;
+
+  &[data-highlight="true"] {
+    color: #ffff !important;
+    font-size: 1.2em !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+  }
+}
+
+/* 消除滚动条 */
+#root *::-webkit-scrollbar {
+  display: none !important;
+}

@@ -83,6 +83,18 @@ a {
     line-height: 30px !important;
 }
 
+/* 歌词高亮 */
+.lyric-item {
+    opacity: 0.3 !important;
+
+    &[data-highlight="true"] {
+        color: #eeff00 !important;
+        font-size: 1.2em !important;
+        font-weight: 600 !important;
+        opacity: 1 !important;
+    }
+}
+
 /* 歌词翻译角标位置 */
 .lyric-options-container {
     /* background-color: red !important; */

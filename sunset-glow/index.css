@@ -2,6 +2,7 @@
   background: url("@/imgs/Sunsetglow.png") !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+
 }
 
 /* 消除滚动条 */
@@ -90,4 +91,16 @@
 
 a {
   color: #6eff81 !important;
+}
+
+/* 歌词高亮 */
+.lyric-item {
+  opacity: 0.3 !important;
+
+  &[data-highlight="true"] {
+    color: #eeff00 !important;
+    font-size: 1.2em !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+  }
 }
