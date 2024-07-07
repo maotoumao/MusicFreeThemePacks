@@ -5,34 +5,38 @@ background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 }
 
 :root {
-  --textColor: #224B35 !important;
+  --textColor: #000 !important;
   --textSecondaryColor: #383838 !important;
-  --backgroundColor: rgb(133, 255, 189) !important;
+  --backgroundColor:  #ffffff  !important;
   --shadowColor: rgba(0, 0, 0, 0.15) !important;
   --dividerColor: #e8e8e8 !important;
   --maskColor: rgba(255, 255, 255, 0.3) !important;
-  --backdropColor: rgba(255,255,255) !important;
-  --primaryColor: #E48A77 !important;
-  --listHoverColor: rgba(255, 255, 255, 0.05) !important;
-  --listActiveColor: rgba(255, 255, 255, 0.1) !important;
-  --placeholderColor: rgba(255,255,255,30%) !important;
+  --primaryColor: #77e968 !important;
   --headerTextColor: black !important;
-
+  --listActiveColor: #14221452 !important;
 }
 
 /*音乐详情页背景*/
 .music-detail-background {
-background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%) !important;
 mask-image: none !important;
 -webkit-mask-image: none !important;
 }
 
 .header-container {
-  background-color: transparent !important;
+  background-color: #f1f1f1 !important;
 }
 
+
 .music-bar-container {
-  background-color: transparent !important;
+  background-color: #ffffff !important;
+}
+
+.app-container {
+  backdrop-filter: blur(2px);
+}
+
+.body-container {
+  background-color: rgba(128,128,128,0.1);
 }
 
 input+svg {

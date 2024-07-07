@@ -1,17 +1,23 @@
 #root {
-  background: url("@/assets/matchmaker.jpg") !important;
+  background: url("@/imgs/matchmaker.jpg") !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
 }
 
 :root {
+  --listActiveColor: transparent !important;
+  --listHoverColor: transparent !important;
   --textColor: #fcfcfc !important;
   --primaryColor: #d38188 !important;
   --hoverColor: rgba(255, 255, 255, 0.05) !important;
   --backgroundColor: #666 !important;
-  --dividerColor: rgba(255, 255, 255, 0) !important;
+  --dividerColor: transparent !important;
   --maskColor: rgba(33, 33, 33, 0.5) !important;
   --placeholderColor: rgba(131, 131, 131, 0.6) !important;
+}
+
+#root *::-webkit-scrollbar {
+  display: none !important;
 }
 
 .side-bar-container,
@@ -24,7 +30,7 @@
 }
 
 .header-container,
-.music-bar-container {  
+.music-bar-container {
   background-color: rgba(33, 33, 33, 0.5) !important;
   /* backdrop-filter: blur(10px) !important; */
 }
@@ -45,4 +51,32 @@ input+svg {
 
 a {
   color: #00b7ff !important;
+}
+
+.music-detail-container {
+  background: rgba(37, 18, 18, 0.05) !important;
+  backdrop-filter: blur(75px);
+  -webkit-backdrop-filter: blur(75px);
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+  top: -64px !important;
+  bottom: -66px !important;
+  padding-top: 64px !important;
+}
+
+.hide-music-detail {
+  right: 100px !important;
+  top: 100px !important;
+}
+
+/* 歌词高亮 */
+.lyric-item {
+  opacity: 0.2 !important;
+
+  &[data-highlight="true"] {
+    color: greenyellow !important;
+    font-size: 1.2em !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+  }
 }
