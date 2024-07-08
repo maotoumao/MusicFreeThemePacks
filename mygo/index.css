@@ -1,0 +1,55 @@
+#root {
+  background: url("@/imgs/mygo.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+:root {
+  --textColor: #ffffff !important;
+  --textSecondaryColor: #000000 !important;
+  --backgroundColor: #8a86b3 !important;
+  --shadowColor: rgba(0, 0, 0, 0.15) !important;
+  --dividerColor: rgba(255, 255, 255, 0.1) !important;
+  --maskColor: none !important;
+  --backdropColor: #253c68 !important;
+  --primaryColor: #FF8899 !important;
+  /* 播放键的颜色，以及文字被选中的颜色*/
+  --listHoverColor: rgba(0, 0, 0, 0.1) !important;
+  --listActiveColor: rgba(0, 0, 0, 0.3) !important;
+  --placeholderColor: #424242 !important;
+
+}
+
+.right-part {
+  --headerTextColor: #333 !important;
+}
+
+
+.music-detail-background {
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+}
+
+.header-container,
+.music-bar-container {
+  background-color: transparent !important;
+  backdrop-filter: blur(10px);
+}
+
+
+input + svg {
+    color: white !important;
+    opacity: 0.7 !important;
+}
+
+.header-search {
+    background-color: #666 !important;
+}
+
+.header-search input {
+    background-color: transparent !important;
+}
+
+a {
+    color: #8bd1ed !important;
+}
