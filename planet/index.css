@@ -19,10 +19,16 @@
   --primaryColor: #7E98FF !important;
   --hoverColor: rgb(100, 125, 141) !important;
   /* --backgroundColor: #386892 !important; 23,64,117*/
-  --backgroundColor: #3a61ff !important;
-  --dividerColor: transparent !important;
+  --backgroundColor: #1f2a58 !important;
+  /* --dividerColor: transparent !important; */
+  --dividerColor: rgba(255, 255, 255, 0.1) !important;
   --placeholderColor: transparent !important;
   /* --headerTextColor: #f5abff !important; */
+}
+
+/* 后退按钮边框线 */
+.navigator-btn {
+  border: 0 !important;
 }
 
 .header-container,
@@ -123,9 +129,9 @@ a {
 }
 
 /* 鼠标悬停音量/词/倍速.. */
-.extra-btn:hover {
+/* .extra-btn:hover {
   color: #00fc22 !important;
-}
+} */
 
 /* 音量大小边框圆角 */
 .volume-bubble-container {
