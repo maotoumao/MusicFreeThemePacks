@@ -32,7 +32,7 @@
     --hoverColor: rgb(17, 26, 35) !important;
     --backgroundColor: rgb(17, 26, 35) !important;
     --dividerColor: transparent !important;
-    --placeholderColor: transparent !important;
+    --placeholderColor: rgb(23, 35, 48) !important;
 }
 
 .header-container,
@@ -105,6 +105,16 @@ a {
 .lyric-option-item {
     width: 30px !important;
     height: 30px !important;
+}
+
+/* 上一曲/下一曲 */
+.skip:hover {
+    color: #00ee20 !important;
+}
+
+/* 音量大小边框圆角 */
+.volume-bubble-container {
+    border-radius: 5px !important;
 }
 
 /* .lyric-container-outer .lyric-item[data-highlight="true"] {

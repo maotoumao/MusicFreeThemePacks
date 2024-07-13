@@ -10,7 +10,7 @@
   --hoverColor: rgb(76, 112, 136) !important;
   --backgroundColor: #315472 !important;
   --dividerColor: transparent !important;
-  --placeholderColor: transparent !important;
+  --placeholderColor: #28425a !important;
 }
 
 #root *::-webkit-scrollbar {
@@ -60,4 +60,14 @@ a {
     font-weight: 600 !important;
     opacity: 1 !important;
   }
+}
+
+/* 上一曲/下一曲 */
+.skip:hover {
+  color: #00ee20 !important;
+}
+
+/* 音量大小边框圆角 */
+.volume-bubble-container {
+  border-radius: 5px !important;
 }
