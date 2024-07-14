@@ -2,7 +2,6 @@
   background: url("@/imgs/Sunsetglow.png") !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-
 }
 
 /* 消除滚动条 */
@@ -17,11 +16,11 @@
   --textColor: #ffffff !important;
   --primaryColor: #f5abff !important;
   --hoverColor: rgb(76, 112, 136) !important;
-  /* --backgroundColor: #386892 !important; 23,64,117*/
-  --backgroundColor: rgb(28, 74, 134) !important;
+  --backgroundColor: rgb(128, 85, 143) !important;
   --dividerColor: transparent !important;
-  --placeholderColor: transparent !important;
+  --placeholderColor: rgb(106, 70, 119) !important;
   /* --headerTextColor: #f5abff !important; */
+  font-size: 14px !important
 }
 
 .header-container,
@@ -38,7 +37,6 @@
   top: -54px !important;
   bottom: -64px !important;
   padding-top: 64px !important;
-  overflow: hidden !important;
 }
 
 /* 歌词设置 */
@@ -49,14 +47,6 @@
   line-height: 30px !important;
 }
 
-/* 高亮歌词 */
-/* [data-highlight="true"] {
-  color: rgb(37, 68, 172) !important;
-  font-size: 1.5em !important;
-  font-weight: 600 !important;
-  opacity: 1 !important;
-} */
-
 /* 歌词翻译角标位置 */
 .lyric-options-container {
   /* background-color: red !important; */
@@ -65,15 +55,11 @@
 
 /* 歌词翻译角标大小 */
 .lyric-option-item {
-  color: #ff0000;
+  /* color: #ff0000; */
   width: 30px !important;
   height: 30px !important;
 }
 
-/* .music-body{
-  height: 260px !important;
-  background-color: red !important;
-} */
 
 .hide-music-detail {
   top: 100px !important;
@@ -98,9 +84,25 @@ a {
   opacity: 0.3 !important;
 
   &[data-highlight="true"] {
-    color: #eeff00 !important;
+    color: #50ff67 !important;
     font-size: 1.2em !important;
     font-weight: 600 !important;
     opacity: 1 !important;
   }
+}
+
+/* 播放按钮 */
+.primary-btn {
+  border-radius: 20px !important;
+  width: 60px !important;
+}
+
+/* 上一曲/下一曲 */
+.skip:hover {
+  color: #00ee20 !important;
+}
+
+/* 音量大小边框圆角 */
+.volume-bubble-container {
+  border-radius: 5px !important;
 }

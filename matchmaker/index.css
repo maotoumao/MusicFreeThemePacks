@@ -1,82 +1,140 @@
 #root {
-  background: url("@/imgs/matchmaker.jpg") !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
+    /* background: url("@/imgs/matchmaker.jpg") !important; */
+    background: rgba(0, 0, 0, 0.3) url('@/imgs/matchmaker.jpg');
+    background-blend-mode: darken;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
+
+/* 消除滚动条 */
+#root *::-webkit-scrollbar {
+    display: none !important;
+}
+
 
 :root {
-  --listActiveColor: transparent !important;
-  --listHoverColor: transparent !important;
-  --textColor: #fcfcfc !important;
-  --primaryColor: #d38188 !important;
-  --hoverColor: rgba(255, 255, 255, 0.05) !important;
-  --backgroundColor: #666 !important;
-  --dividerColor: transparent !important;
-  --maskColor: rgba(33, 33, 33, 0.5) !important;
-  --placeholderColor: rgba(131, 131, 131, 0.6) !important;
+    --listActiveColor: transparent !important;
+    --listHoverColor: transparent !important;
+    --textColor: #fcfcfc !important;
+    --primaryColor: #FF6666 !important;
+    --hoverColor: rgba(255, 255, 255, 0.05) !important;
+    --backgroundColor: #553535 !important;
+    --dividerColor: transparent !important;
+    /* --dividerColor: rgba(255, 255, 255, 0.1) !important; */
+    --placeholderColor: #744c4c !important;
+    /* --headerTextColor: #f5abff !important; */
+    --maskColor: rgba(51, 51, 51, 0.7) !important
 }
 
-#root *::-webkit-scrollbar {
-  display: none !important;
-}
-
-.side-bar-container,
-.page-container {
-  background-color: rgba(33, 33, 33, 0.5) !important;
-}
-
-.side-bar--list-item-container[data-selected="true"] {
-  background-color: rgba(255, 255, 255, 0.05) !important;
-}
 
 .header-container,
 .music-bar-container {
-  background-color: rgba(33, 33, 33, 0.5) !important;
-  /* backdrop-filter: blur(10px) !important; */
+    background-color: transparent !important;
+    /* backdrop-filter: blur(10px) !important; */
 }
 
-
-input+svg {
-  color: white !important;
-  opacity: 0.7 !important;
+/* 音乐详情页 */
+.music-detail-container {
+    background-image: url("@/imgs/matchmaker.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    top: -54px !important;
+    bottom: -64px !important;
+    padding-top: 64px !important;
+    overflow: hidden !important;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
 }
+
+/* 歌词设置 */
+.lyric-container {
+    /* background-color: red !important; */
+    height: 280px !important;
+    margin-top: 40px !important;
+    line-height: 30px !important;
+    /* color: #00ee20 !important;未播放歌词颜色 */
+}
+
+/* 高亮歌词 */
+/* [data-highlight="true"] {
+      color: rgb(37, 68, 172) !important;
+      font-size: 1.5em !important;
+      font-weight: 600 !important;
+      opacity: 1 !important;
+    } */
+
+/* 歌词翻译角标位置 */
+.lyric-options-container {
+    /* background-color: red !important; */
+    bottom: 100px !important;
+}
+
+/* 歌词翻译角标大小 */
+.lyric-option-item {
+    /* color: #ff0000; */
+    width: 30px !important;
+    height: 30px !important;
+}
+
+/* .music-body{
+      height: 260px !important;
+      background-color: red !important;
+    } */
+
+.hide-music-detail {
+    top: 100px !important;
+    right: 100px !important;
+}
+
+/* 隐藏专辑封面 */
+/* .music-album-options {
+    display: none !important;
+} */
 
 .header-search {
-  background-color: #666 !important;
-}
-
-.header-search input {
-  background-color: transparent !important;
+    background-color: #4c789e38 !important;
 }
 
 a {
-  color: #00b7ff !important;
-}
-
-.music-detail-container {
-  background: rgba(37, 18, 18, 0.05) !important;
-  backdrop-filter: blur(75px);
-  -webkit-backdrop-filter: blur(75px);
-  mask-image: none !important;
-  -webkit-mask-image: none !important;
-  top: -64px !important;
-  bottom: -66px !important;
-  padding-top: 64px !important;
-}
-
-.hide-music-detail {
-  right: 100px !important;
-  top: 100px !important;
+    color: #6eff81 !important;
 }
 
 /* 歌词高亮 */
 .lyric-item {
-  opacity: 0.2 !important;
+    opacity: 0.3 !important;
 
-  &[data-highlight="true"] {
-    color: greenyellow !important;
-    font-size: 1.2em !important;
-    font-weight: 600 !important;
-    opacity: 1 !important;
-  }
+    &[data-highlight="true"] {
+        color: #6eff81 !important;
+        font-size: 1.2em !important;
+        font-weight: 600 !important;
+        opacity: 1 !important;
+    }
 }
+
+/* 播放按钮 */
+.primary-btn {
+    /* background-color: #ff0000 !important; */
+    border-radius: 20px !important;
+    width: 60px !important;
+
+}
+
+/* 上一曲/下一曲 */
+.skip:hover {
+    color: #00ee20 !important;
+}
+
+/* 鼠标悬停音量/词/倍速.. */
+/* .extra-btn:hover {
+    color: #00fc22 !important;
+  } */
+
+/* 音量大小边框圆角 */
+.volume-bubble-container {
+    border-radius: 5px !important;
+}
+
+/* 右下角播放列表 */
+/* .components--panel-base-content {
+      background-color: #ff0000 !important;
+    } */
