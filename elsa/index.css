@@ -1,0 +1,112 @@
+#root {
+    background: rgba(0, 0, 0, 0.2) url('@/imgs/preview.jpg');
+    background-blend-mode: darken;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+/* 消除滚动条 */
+#root *::-webkit-scrollbar {
+    display: none !important;
+}
+
+
+:root {
+    --listActiveColor: transparent !important;
+    --listHoverColor: transparent !important;
+    --textColor: #FEEDC1 !important;
+    --primaryColor: #F8BB9F !important;
+    /* --hoverColor: rgb(76, 112, 136) !important; */
+    --backgroundColor: rgb(151, 158, 114) !important;
+    --dividerColor: transparent !important;
+    --placeholderColor: rgb(180, 192, 122) !important;
+    --headerTextColor: #FEEDC1 !important;
+    font-size: 14px !important
+}
+
+.header-container,
+.music-bar-container {
+    background-color: transparent !important;
+    /* backdrop-filter: blur(10px) !important; */
+}
+
+/* 音乐详情页 */
+.music-detail-container {
+    background-image: url("@/imgs/preview.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    top: -54px !important;
+    bottom: -64px !important;
+    padding-top: 64px !important;
+    /* background: rgba(37, 18, 18, 0.2) !important;
+    backdrop-filter: blur(52px);
+    -webkit-backdrop-filter: blur(52px); */
+}
+
+/* 歌词设置 */
+.lyric-container {
+    height: 280px !important;
+    margin-top: 40px !important;
+    line-height: 30px !important;
+}
+
+/* 歌词翻译角标位置 */
+.lyric-options-container {
+    /* background-color: red !important; */
+    bottom: 100px !important;
+}
+
+/* 歌词翻译角标大小 */
+.lyric-option-item {
+    /* color: #ff0000; */
+    width: 30px !important;
+    height: 30px !important;
+}
+
+
+.hide-music-detail {
+    top: 100px !important;
+    right: 100px !important;
+}
+
+/* 隐藏专辑封面 */
+/* .music-album-options {
+    display: none !important;
+  } */
+
+.header-search {
+    background-color: #4c789e38 !important;
+}
+
+a {
+    color: #6eff81 !important;
+}
+
+/* 歌词高亮 */
+.lyric-item {
+    opacity: 0.4 !important;
+    font-size: 18px !important;
+
+    &[data-highlight="true"] {
+        color: #56ff6c !important;
+        font-size: 25px !important;
+        font-weight: 600 !important;
+        opacity: 1 !important;
+    }
+}
+
+/* 播放按钮 */
+.primary-btn {
+    border-radius: 20px !important;
+    width: 60px !important;
+}
+
+/* 上一曲/下一曲 */
+.skip:hover {
+    color: #00ee20 !important;
+}
+
+/* 音量大小边框圆角 */
+.volume-bubble-container {
+    border-radius: 5px !important;
+}
