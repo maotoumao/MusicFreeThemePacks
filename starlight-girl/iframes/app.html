@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zzzzz</title>
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            width: auto;
+            height: 700px;
+        }
+
+        .video-container {
+            position: relative;
+            width: auto;
+            height: 700px;
+        }
+
+        .video-container video {
+            width: auto;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* filter: brightness(0.9); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="@/imgs/城市夜晚女孩.mp4" type="video/mp4">
+        </video>
+
+    </div>
+</body>
+
+</html>
