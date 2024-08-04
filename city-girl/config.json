@@ -1,0 +1,10 @@
+{
+    "name": "城市夜晚女孩【动态】",
+    "preview": "@/imgs/preview.png",
+    "description": "城市夜晚女孩",
+    "author": "hope",
+    "version": "0.0.0",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
+}

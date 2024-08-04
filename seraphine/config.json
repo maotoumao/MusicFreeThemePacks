@@ -1,0 +1,10 @@
+{
+    "name": "萨勒芬妮【动态】",
+    "preview": "@/imgs/preview.jpeg",
+    "description": "皮皮虾，冲啊！",
+    "author": "hope",
+    "version": "0.0.0",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
+}
