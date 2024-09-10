@@ -1,0 +1,62 @@
+:root {
+  --textColor: #56534c !important;
+  --textSecondaryColor: #aaaaaa !important;
+  --shadowColor: rgba(0, 0, 0, 0.3) !important;
+  --dividerColor: rgba(255, 255, 255, 0.1) !important;
+  --maskColor: rgba(33, 33, 33, 0.2) !important;
+  --backdropColor: #eee4ff !important;
+  --primaryColor: #ff7695 !important;
+  --backgroundColor: #fff1f1 !important;
+  --headerTextColor: #56534c !important;
+  --placeholderColor: #dededeba !important;
+
+}
+
+
+.right-part {
+  --headerTextColor: #333 !important;
+}
+
+.music-detail-background {
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+}
+
+/* 音乐详情页 */
+.music-detail-container {
+  background-image: none !important;
+  background-color: transparent !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  top: -54px !important;
+  bottom: -64px !important;
+  padding-top: 64px !important;
+  overflow: hidden !important;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+}
+.hide-music-detail {
+  top: 100px !important;
+  right: 100px !important;
+}
+
+.header-container,
+.music-bar-container {
+  background-color: transparent !important;
+  backdrop-filter: blur(10px);
+}
+
+
+.body-container {
+  background-color: rgba(128,128,128,0.1);
+}
+
+.app-container {
+  backdrop-filter: blur(2px);
+}
+
+a {
+    color: #184db3 !important;
+}
