@@ -28,19 +28,25 @@
   --headerTextColor: #000000 !important;
 }
 
-.music-detail-container {
-  background: rgba(37, 18, 18, 0.05) !important;
-  backdrop-filter: blur(75px);
-  -webkit-backdrop-filter: blur(75px);
+.music-detail-background {
   mask-image: none !important;
   -webkit-mask-image: none !important;
-  top: -64px!important;
-  bottom: -66px!important;
-  padding-top: 64px!important;
 }
 
-.hide-music-detail {
-  top: 100px !important;
+/* 音乐详情页 */
+.music-detail-container {
+  background-image: none !important;
+  background-color: transparent !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  top: -54px !important;
+  bottom: -64px !important;
+  padding-top: 64px !important;
+  overflow: hidden !important;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
 }
 
 .header-container,
