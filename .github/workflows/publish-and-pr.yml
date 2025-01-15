@@ -43,8 +43,8 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           branch: auto-publish-changes-$(date +%s)
-          branch-overwrite: true
           title: "Automated Changes After Publish"
           body: |
             This PR was created automatically after running the publish script on the master branch.
           commit-message: "Automated changes after publish"
+          base: "master"
