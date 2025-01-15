@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 jobs:
   publish-and-pr:
-    if: github.event.pull_request.merged == true # 仅在 PR 合并时触发
+    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'master'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -34,7 +34,7 @@ jobs:
       # Commit and push changes to a new branch
       - name: Commit and create branch
         run: |
-          git checkout -b auto-publish-changes
+          git checkout -b auto-publish-changes-$(date +%s)
           git add .
           git commit -m "Automated changes after publish"
 
@@ -42,7 +42,8 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
-          branch: auto-publish-changes
+          branch: auto-publish-changes-$(date +%s)
+          branch-overwrite: true
           title: "Automated Changes After Publish"
           body: |
             This PR was created automatically after running the publish script on the master branch.
