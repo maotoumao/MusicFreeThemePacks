@@ -1,0 +1,41 @@
+name: 自动发布
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+jobs:
+  publish-and-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20' 
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run publish script
+        run: npm run publish
+
+      - name: Create new branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b publish-update-$(date +%s)
+          git add .
+          git commit -m "Auto-generated publish update"
+          git push origin HEAD
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          title: "Auto-generated PR after publish"
+          body: "This PR was automatically generated after running `npm run publish`."
+          branch: "publish-update-*"
+          base: "master"
