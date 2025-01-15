@@ -1,11 +1,14 @@
 name: 自动发布
 on:
-  push:
+  pull_request:
+    types:
+      - closed
     branches:
       - master
   workflow_dispatch:
 jobs:
   publish-and-pr:
+    if: github.event.pull_request.merged == true # 仅在 PR 合并时触发
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
