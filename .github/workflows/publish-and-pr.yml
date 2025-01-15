@@ -37,21 +37,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      # Commit and push changes to a new branch
-      - name: Commit and create branch
-        run: |
-          git checkout -b ${{ steps.branch_name.outputs.branch_name }}
-          git add .
-          git commit -m "Automated changes after publish"
-          git push origin ${{ steps.branch_name.outputs.branch_name }}
-
       # Push changes and create a PR
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v7
         with:
           branch: ${{ steps.branch_name.outputs.branch_name }}
           title: "Automated Changes After Publish"
           body: |
             This PR was created automatically after running the publish script on the master branch.
           commit-message: "Automated changes after publish"
+          base: master
  
