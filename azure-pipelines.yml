@@ -1,0 +1,22 @@
+trigger: none # 禁用 CI 触发
+
+schedules:
+  - cron: "0 0 * * *" # 每天午夜运行（UTC 时间）
+    displayName: Daily sync
+    branches:
+      include:
+        - main # 同步的分支
+    always: true # 即使没有代码变更也运行
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - checkout: self # 检出 Azure DevOps 仓库
+
+  - script: |
+      git remote add github https://github.com/maotoumao/MusicFreeThemePacks.git
+      git fetch github
+      git merge github/main --allow-unrelated-histories
+      git push origin main
+    displayName: 'Sync GitHub to Azure DevOps'
