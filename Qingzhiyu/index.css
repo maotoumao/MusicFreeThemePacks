@@ -1,0 +1,49 @@
+#root {
+  background: url("@/assets/background.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+:root {
+  --textColor: #3efded !important;
+  --primaryColor:rgb(69, 228, 154) !important;
+  --hoverColor: rgba(63, 175, 240, 0.623) !important;
+  --backgroundColor: #7393B3 !important;
+  // --shadowColor: rgba(128, 128, 128, 0.1) !important;
+  --dividerColor: rgba(255, 255, 255, 0.1) !important;
+  --maskColor: rgba(33, 33, 33, 0.1) !important;
+  --placeholderColor: #7a7a7ad9 !important;
+}
+
+.side-bar-container,
+.page-container {
+  background-color: rgba(4, 71, 255, 0) !important;
+}
+
+.side-bar--list-item-container[data-selected="true"] {
+  background-color: rgb(71, 89, 122) !important;
+}
+
+.header-container,
+.music-bar-container {
+  background-color: rgba(33, 33, 33, 0.4) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+
+input + svg {
+  color: rgb(168, 235, 255) !important;
+  opacity: 0.7 !important;
+}
+
+.header-search {
+  background-color: #444348 !important;
+}
+
+.header-search input {
+  background-color: transparent !important;
+}
+
+a {
+  color: rgb(139, 209, 237) !important;
+}

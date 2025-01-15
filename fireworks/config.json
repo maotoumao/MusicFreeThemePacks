@@ -1,0 +1,9 @@
+{
+    "name": "烟花♪动态",
+    "preview": "@/imgs/preview.jpg",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    },
+    "author": "akFace",
+    "description": "提前祝大家新年快乐，喜欢烟花的可以试试哦~"
+}

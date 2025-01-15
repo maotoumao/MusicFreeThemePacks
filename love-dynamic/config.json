@@ -1,0 +1,9 @@
+{
+    "name": "爱的告白♪动态",
+    "preview": "@/imgs/preview.jpg",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    },
+    "author": "akFace",
+    "description": "超好看的动态主题哦，颜色会随着时间变化"
+}
