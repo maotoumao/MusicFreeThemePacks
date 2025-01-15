@@ -25,20 +25,25 @@ jobs:
       - name: Run publish script
         run: npm run publish
 
-      - name: Create new branch
+      # Configure Git for committing changes
+      - name: Configure Git
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -b publish-update-$(date +%s)
-          git add .
-          git commit -m "Auto-generated publish update"
-          git push origin HEAD
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
+      # Commit and push changes to a new branch
+      - name: Commit and create branch
+        run: |
+          git checkout -b auto-publish-changes
+          git add .
+          git commit -m "Automated changes after publish"
+
+      # Push changes and create a PR
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v5
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          title: "Auto-generated PR after publish"
-          body: "This PR was automatically generated after running `npm run publish`."
-          branch: "publish-update-*"
-          base: "master"
+          branch: auto-publish-changes
+          title: "Automated Changes After Publish"
+          body: |
+            This PR was created automatically after running the publish script on the master branch.
+          commit-message: "Automated changes after publish"
