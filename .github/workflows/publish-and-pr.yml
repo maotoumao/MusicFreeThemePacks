@@ -54,4 +54,4 @@ jobs:
           body: |
             This PR was created automatically after running the publish script on the master branch.
           commit-message: "Automated changes after publish"
-          base: "master"
+ 
