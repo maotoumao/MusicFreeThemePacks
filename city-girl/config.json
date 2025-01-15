@@ -1,0 +1,10 @@
+{
+    "name": "星光美少女【动态】",
+    "preview": "@/imgs/preview.png",
+    "description": "星光美少女",
+    "author": "hope",
+    "version": "0.0.0",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
+}
