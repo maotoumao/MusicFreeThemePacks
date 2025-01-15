@@ -37,6 +37,7 @@ jobs:
           git checkout -b auto-publish-changes-$(date +%s)
           git add .
           git commit -m "Automated changes after publish"
+          git push origin auto-publish-changes-$(date +%s)
 
       # Push changes and create a PR
       - name: Create Pull Request
