@@ -17,7 +17,3 @@
 
 3. 软件内切换主题即可
 
-
-## Sponsor
-
-[<img src="https://api.gitsponsors.com/api/badge/img?id=669518828" height="20">](https://api.gitsponsors.com/api/badge/link?p=Aasb01SVpoX0m4BgQynyW4Bq+cHPGYIfKmHtbzgYw5Usd0HKkLEUhGwyZEKNNDJHDoOOqLtgO3VAl9+a/93OAwpOLdSxOTLzggh/Gy/JmxHsQf9KvulIEQgLi2liViHNzhXo/fp2O9P9cumXGRhsGw==)
