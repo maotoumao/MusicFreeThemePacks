@@ -1,0 +1,110 @@
+/* 消除滚动条 */
+#root *::-webkit-scrollbar {
+  display: none !important;
+}
+
+:root {
+  --listActiveColor: transparent !important;
+  --listHoverColor: transparent !important;
+  --textColor: #D2A479 !important; /* 使用天空色作为主文本色 */
+  --primaryColor: #D2A479 !important; /* 使用天空色作为主色调 */
+  --hoverColor: #A37F55 !important; /* 天空色的深色变体 */
+  --backgroundColor: rgba(22, 33, 77, 0.85) !important; /* 使用海浪色作为背景，增加透明度 */
+  --dividerColor: transparent !important;
+  --placeholderColor: rgba(31, 31, 34, 0.6) !important; /* 使用海岸沙滩色 */
+  --headerTextColor: #D2A479 !important; /* 使用天空色作为标题文本 */
+  font-size: 14px !important;
+}
+
+.header-container,
+.music-bar-container {
+  background-color: rgba(22, 33, 77, 0.7) !important; /* 使用海浪色作为顶部/底部栏背景 */
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+}
+
+/* 音乐详情页 */
+.music-detail-container {
+  background-image: url("@/imgs/preview.jpeg") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  top: -54px !important;
+  bottom: -64px !important;
+  padding-top: 64px !important;
+}
+
+/* 歌词设置 */
+.lyric-container {
+  height: 280px !important;
+  margin-top: 40px !important;
+  line-height: 30px !important;
+  background-color: rgba(22, 33, 77, 0.5) !important; /* 使用海浪色作为歌词背景 */
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  border-radius: 8px !important;
+  padding: 15px !important;
+}
+
+/* 歌词翻译角标位置 */
+.lyric-options-container {
+  bottom: 100px !important;
+  background-color: rgba(31, 31, 34, 0.7) !important; /* 使用海岸沙滩色 */
+  border-radius: 8px !important;
+  padding: 8px !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+}
+
+/* 歌词翻译角标大小 */
+.lyric-option-item {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.hide-music-detail {
+  top: 100px !important;
+  right: 100px !important;
+}
+
+.header-search {
+  background-color: rgba(31, 31, 34, 0.4) !important; /* 使用海岸沙滩色 */
+  border: 1px solid rgba(210, 164, 121, 0.3) !important; /* 使用天空色作为边框 */
+  border-radius: 6px !important;
+}
+
+a {
+  color: #D2A479 !important; /* 使用天空色作为链接颜色 */
+}
+
+/* 歌词高亮 */
+.lyric-item {
+  opacity: 0.8 !important;
+  font-size: 18px !important;
+
+  &[data-highlight="true"] {
+    color: #D2A479 !important; /* 使用天空色作为高亮歌词颜色 */
+    font-size: 25px !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+    text-shadow: 0 0 8px rgba(210, 164, 121, 0.4) !important;
+  }
+}
+
+/* 播放按钮 */
+.primary-btn {
+  border-radius: 20px !important;
+  width: 60px !important;
+  background-color: #D2A479 !important; /* 使用天空色 */
+  color: #16214D !important; /* 使用海浪色作为按钮文字颜色 */
+}
+
+/* 上一曲/下一曲 */
+.skip:hover {
+  color: #D2A479 !important; /* 使用天空色作为悬停颜色 */
+}
+
+/* 音量大小边框圆角 */
+.volume-bubble-container {
+  border-radius: 5px !important;
+  background-color: rgba(31, 31, 34, 0.8) !important; /* 使用海岸沙滩色 */
+}
