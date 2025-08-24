@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>倾霞碎绛【动态】</title>
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .video-container {
+            position: fixed;
+            top: 50px;px;
+            left: 220px;
+            right: 0px;
+            bottom: 65px;
+        }
+
+        .video-container video {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.93);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="@/imgs/Ocean_Waves_Natures_Embrace.mp4" type="video/mp4">
+        </video>
+
+    </div>
+</body>
+
+</html>
