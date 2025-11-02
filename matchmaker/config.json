@@ -1,6 +1,6 @@
 {
     "name": "红娘",
-    "preview": "@/assets/matchmaker.jpg",
+    "preview": "@/imgs/matchmaker.jpg",
     "description": "背景图片",
     "author": "hope",
     "version": "0.0.0"

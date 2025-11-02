@@ -1,7 +1,8 @@
 {
     "name": "黑红",
-    "preview": "@/assets/black-red.png",
+    "preview": "@/imgs/black-red.png",
     "author":"hope",
-    "description": "第一次学习更改musicFree主题,黑红配色，凑合着看吧"
+    "description": "对之前做了细微修改",
+    "version":"0.0.1"
 }
    

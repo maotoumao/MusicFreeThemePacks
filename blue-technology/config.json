@@ -1,0 +1,10 @@
+{
+    "name": "蓝色科技【动态】",
+    "preview": "@/imgs/preview.jpeg",
+    "description": "夏日炎炎，海边公路格外美丽~",
+    "author": "hope",
+    "version": "0.0.0",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
+}

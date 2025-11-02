@@ -1,0 +1,9 @@
+{
+    "name": "荧光文字倒影",
+    "preview": "@/imgs/preview.png",
+    "description": "文本需要在app.html里修改",
+    "author": "beef-potato",
+    "iframe":{
+        "app": "@/iframes/app.html"
+    }
+}

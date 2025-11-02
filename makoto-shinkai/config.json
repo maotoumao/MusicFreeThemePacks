@@ -1,0 +1,10 @@
+{
+    "name": "新海诚动漫风【动态】",
+    "preview": "@/imgs/preview.jpg",
+    "description": "动态背景",
+    "author": "hope",
+    "version": "0.0.0",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
+}

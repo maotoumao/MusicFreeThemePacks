@@ -1,0 +1,10 @@
+{
+    "name": "午后金克斯【动态】",
+    "preview": "@/imgs/preview.png",
+    "description": "爆爆！",
+    "author": "hope",
+    "version": "0.0.0",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
+}

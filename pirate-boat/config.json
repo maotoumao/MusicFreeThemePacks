@@ -1,7 +1,7 @@
 {
     "name": "海盗船",
-    "preview": "@/assets/Pirates.png",
-    "description": "背景图片",
+    "preview": "@/imgs/Pirates.png",
+    "description": "背景图片，优化歌曲详情页",
     "author": "hope",
-    "version": "0.0.0"
+    "version": "0.0.1"
 }

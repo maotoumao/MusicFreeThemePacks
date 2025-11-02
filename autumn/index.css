@@ -1,0 +1,52 @@
+#root {
+  background: url("@/imgs/autumn.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+:root {
+  --textColor: #011526 !important;
+  --textSecondaryColor: #000000 !important;
+  --backgroundColor: #F2F0D5 !important;
+  --shadowColor: rgba(0, 0, 0, 0.15) !important;
+  --dividerColor: rgba(255, 255, 255, 0.1) !important;
+  --maskColor: rgba(242, 191, 179, 0.3) !important;
+  --primaryColor: #F2B749 !important;
+  --listHoverColor: rgba(59, 31, 54, 0.1) !important;
+  --listActiveColor: rgba(59, 31, 54, 0.3) !important;
+  --placeholderColor: rgba(255,255,255,0.4) !important;
+
+}
+
+.right-part {
+  --headerTextColor: #333 !important;
+}
+
+.music-detail-background {
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+}
+
+.header-container,
+.music-bar-container {
+  background-color: transparent !important;
+  backdrop-filter: blur(10px);
+}
+
+
+input + svg {
+    color: white !important;
+    opacity: 0.7 !important;
+}
+
+.header-search {
+    background-color: #666 !important;
+}
+
+.header-search input {
+    background-color: transparent !important;
+}
+
+a {
+    color: #8bd1ed !important;
+}

@@ -1,0 +1,140 @@
+#root {
+  background: url("@/imgs/preview.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+}
+
+/* 消除滚动条 */
+#root *::-webkit-scrollbar {
+  display: none !important;
+}
+
+
+:root {
+  --listActiveColor: transparent !important;
+  --listHoverColor: transparent !important;
+  --textColor: rgb(255, 255, 255) !important;
+  --primaryColor: #7E98FF !important;
+  --hoverColor: rgb(100, 125, 141) !important;
+  --backgroundColor: #1e006b !important;
+  --dividerColor: transparent !important;
+  /* --dividerColor: rgba(255, 255, 255, 0.1) !important; */
+  --placeholderColor: #1a005a !important;
+  /* --headerTextColor: #f5abff !important; */
+  font-size: 14px !important
+}
+
+
+.header-container,
+.music-bar-container {
+  background-color: transparent !important;
+  /* backdrop-filter: blur(10px) !important; */
+}
+
+/* 音乐详情页 */
+.music-detail-container {
+  background-image: url("@/imgs/preview.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  top: -54px !important;
+  bottom: -64px !important;
+  padding-top: 64px !important;
+  overflow: hidden !important;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+}
+
+/* 歌词设置 */
+.lyric-container {
+  /* background-color: red !important; */
+  height: 280px !important;
+  margin-top: 40px !important;
+  line-height: 30px !important;
+  /* color: #00ee20 !important;未播放歌词颜色 */
+}
+
+/* 高亮歌词 */
+/* [data-highlight="true"] {
+    color: rgb(37, 68, 172) !important;
+    font-size: 1.5em !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+  } */
+
+/* 歌词翻译角标位置 */
+.lyric-options-container {
+  /* background-color: red !important; */
+  bottom: 100px !important;
+}
+
+/* 歌词翻译角标大小 */
+.lyric-option-item {
+  /* color: #ff0000; */
+  width: 30px !important;
+  height: 30px !important;
+}
+
+/* .music-body{
+    height: 260px !important;
+    background-color: red !important;
+  } */
+
+.hide-music-detail {
+  top: 100px !important;
+  right: 100px !important;
+}
+
+/* 隐藏专辑封面 */
+.music-album-options {
+  display: none !important;
+}
+
+.header-search {
+  background-color: #4c789e38 !important;
+}
+
+a {
+  color: #6eff81 !important;
+}
+
+/* 歌词高亮 */
+.lyric-item {
+  opacity: 0.3 !important;
+
+  &[data-highlight="true"] {
+    color: #6eff81 !important;
+    font-size: 1.2em !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+  }
+}
+
+/* 播放按钮 */
+.primary-btn {
+  /* background-color: #ff0000 !important; */
+  border-radius: 20px !important;
+  width: 60px !important;
+
+}
+
+/* 上一曲/下一曲 */
+.skip:hover {
+  color: #00ee20 !important;
+}
+
+/* 鼠标悬停音量/词/倍速.. */
+/* .extra-btn:hover {
+  color: #00fc22 !important;
+} */
+
+/* 音量大小边框圆角 */
+.volume-bubble-container {
+  border-radius: 5px !important;
+}
+
+/* 右下角播放列表 */
+/* .components--panel-base-content {
+    background-color: #ff0000 !important;
+  } */

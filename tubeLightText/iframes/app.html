@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+    <head>
+        <title>tubelight text animation</title>
+        <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+         <style>
+            *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #07252d;
+
+}
+h2
+{
+    position: absolute;
+    font-size: 6em;
+    letter-spacing: 15px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    /* -webkit-box-reflect: below 1px linear-gradient(tranparent, #0008); */
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+
+}
+h2::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 100%;
+
+    transform: rotateX(180deg) translateY(-1px);
+    opacity: 0.5;
+    background: linear-gradient(tranparent, #0008);
+    mix-blend-mode: screen;
+    outline: none;
+    
+}
+@keyframes animate
+{
+    0%, 100%
+    {
+        color: #0e3742;
+        text-shadow: none;
+
+    }
+    50%, 70%
+    {
+     color: #fff;
+     text-shadow: 0 0 10px  #03bef4,
+     0 0 20px  #03bef4,
+     0 0 40px  #03bef4,
+     0 0 60px  #03bef4,
+     0 0 80px  #03bef4,
+     0 0 160px  #03bef4
+    }
+}
+         </style>
+
+    </head>
+    <body>
+        <h2  data-text="anything">MYGO!!!!!</h2>
+
+        <script>
+            document.querySelectorAll('h2').forEach(h2 => {
+                h2.setAttribute('data-text', h2.textContent);
+            });
+        </script>
+        
+    </body>
+<html>
