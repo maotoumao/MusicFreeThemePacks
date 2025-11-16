@@ -1,0 +1,9 @@
+{
+  "name": "倾霞碎绛",
+  "preview": "@/imgs/preview.jpeg",
+  "description": "霞烧万顷赤琉璃，浪吻千沙碎绛玑。天倾一海胭脂色，风捧余红赠暮晖。",
+  "author": "麥天浩",
+  "version": "0.0.0",
+  "iframes": {"app": "@/iframes/app.html"},
+  "id": "6dNPwwRmf6TGTMtnGw7oy"
+}

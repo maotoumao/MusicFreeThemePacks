@@ -1,0 +1,153 @@
+/* #root {
+  background: rgba(0, 0, 0, 0.2) url('@/imgs/123.mp4');
+  background-blend-mode: darken;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+} */
+
+/* 消除滚动条 */
+#root *::-webkit-scrollbar {
+  display: none !important;
+}
+
+
+:root {
+  /* 背景色（ */
+  --backgroundColor: rgba(37, 57, 92) !important;
+
+  /* 1. 文本层级：控制在 60-80% 亮度，柔和不刺眼 */
+  --textColor:           #D4AF37 !important;  /* 主文字  亮度≈78% */
+  --headerTextColor:     #D4AF37 !important;  /* 标题文字与主文字同色，保持极简 */
+  --placeholderColor:    #7C8BA4 !important;  /* 占位符  亮度≈58% */
+
+  /* 2. 交互层级：同色系微暖强调，饱和度和亮度均降低 */
+  --primaryColor:        #7A9CC6 !important;  /* 主按钮/关键图标 */
+  --hoverColor:          #9BB2D6 !important;  /* hover 再提亮 10% */
+
+  /* 3. 列表状态：极淡同色系叠加，避免透明带来的割裂感 */
+  --listHoverColor:      rgba(60, 80, 120, .35) !important;
+  --listActiveColor:     rgba(60, 80, 120, .50) !important;
+
+  /* 4. 分隔线：几乎不可见的低透明冷灰 */
+  --dividerColor:        rgba(255, 255, 255, .06) !important;
+
+  /* 字号保持 */
+  font-size: 14px !important;
+}
+
+.header-container,
+.music-bar-container {
+  background-color: transparent !important;
+  /* backdrop-filter: blur(10px) !important; */
+}
+
+/* 音乐详情页：封面+毛玻璃 */
+.music-detail-container{
+  position: fixed;
+  inset: 0;                       /* top:0 right:0 bottom:0 left:0 */
+  padding: 100px 0 150px 150px;   /* 上 100 左 150 下 150 右 0 */
+  overflow: hidden;
+
+  /* 响应式背景 */
+  background-image: image-set(
+    url("@/imgs/preview@2x.webp") type("image/webp") 2x,
+    url("@/imgs/preview@1x.webp") type("image/webp") 1x,
+    url("@/imgs/preview@2x.jpg")  2x,
+    url("@/imgs/preview.jpg")     1x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: background-position 8s ease-in-out;
+}
+
+/* 深色半透明遮罩 + 毛玻璃 */
+.music-detail-container::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(37,57,92,.40);
+  backdrop-filter: blur(24px);
+  transition: opacity .6s;
+  z-index: 0;
+}
+
+/* 悬停：微动 & 微亮 */
+.music-detail-container:hover{
+  background-position: 50% 60%;
+}
+.music-detail-container:hover::before{
+  opacity: .3;
+}
+
+/* 歌词设置 */
+.lyric-container {
+  /* background-color: red !important; */
+  height: 280px !important;
+  margin-top: 40px !important;
+  line-height: 30px !important;
+}
+
+/* 歌词翻译角标位置 */
+.lyric-options-container {
+  /* background-color: red !important; */
+  bottom: 100px !important;
+}
+
+/* 歌词翻译角标大小 */
+.lyric-option-item {
+  /* color: #ff0000; */
+  width: 30px !important;
+  height: 30px !important;
+}
+
+/* 关闭歌曲详情按钮位置设置 */
+.hide-music-detail {
+  top: 20px !important;
+  right: 100px !important;
+}
+
+/* 隐藏专辑封面 */
+/*.music-album-options {
+  display: none !important;
+} */
+
+.header-search {
+  background-color: #4c789e38 !important;
+}
+
+a {
+  color: #6eff81 !important;
+}
+
+/* 歌词高亮 */
+.lyric-item {
+  opacity: 0.8 !important;
+  font-size: 18px !important;
+
+  &[data-highlight="true"] {
+    color: #ffaa48 !important;
+    font-size: 25px !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+  }
+}
+
+/* 播放按钮 */
+.primary-btn {
+  border-radius: 20px !important;
+  width: 60px !important;
+}
+.primary-btn:hover {
+  color: #ffaa48 !important;
+}
+
+/* 上一曲/下一曲 */
+.skip:hover {
+  color: #ffaa48 !important;
+}
+
+/* 音量大小边框圆角 */
+.volume-bubble-container {
+  border-radius: 5px !important;
+}

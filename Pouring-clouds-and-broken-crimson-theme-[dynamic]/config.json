@@ -1,0 +1,10 @@
+{
+    "name": "倾霞碎绛【动态】",
+    "preview": "@/imgs/preview.jpeg",
+    "description": "海浪、晚霞~",
+    "author": "麥麥（麥天浩）",
+    "version": "0.0.1",
+    "iframe": {
+        "app": "@/iframes/app.html"},
+    "id": "0e9ba193111e4eadb4225"
+}
