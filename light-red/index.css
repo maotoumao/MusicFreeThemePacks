@@ -14,18 +14,18 @@
   --headerTextColor: white; // 顶部文本颜色
 } */
 :root {
-  --textColor: #333 !important;
+  --textColor: #000000 !important;
   --textSecondaryColor: #383838 !important;
   --backgroundColor: #ffffff !important;
   --shadowColor: rgba(0, 0, 0, 0.15) !important;
   --dividerColor: #e8e8e8 !important;
   --maskColor: rgba(33, 33, 33, 0.8) !important;
   --backdropColor: #ffffff !important;
-  --primaryColor: #FB7299 !important;
+  --primaryColor: #FD3D49 !important;
   --listHoverColor: rgba(255, 255, 255, 0.05) !important;
   --listActiveColor: rgba(255, 255, 255, 0.1) !important;
   --placeholderColor: #aaaaaa !important;
-  --headerTextColor: #333 !important;
+  --headerTextColor: #000000 !important;
 }
 
 .music-detail-background {

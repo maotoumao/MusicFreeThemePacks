@@ -1,6 +1,7 @@
 {
-    "name": "爱的告白♪动态",
+    "name": "爱的告白【动态】",
     "preview": "@/imgs/preview.jpg",
+    "version": "1.0.1",
     "iframe": {
         "app": "@/iframes/app.html"
     },
