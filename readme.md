@@ -1,5 +1,9 @@
 # MusicFree 桌面版的主题包
 
+## 提交主题
+
+请fork此仓库，并提交主题到dev分支。提交PR前请将主题包内的图片/视频进行压缩。
+
 ## 使用方法（0.0.2及以上版本）
 1. 下载 [主题包](https://wwwzb.lanzoue.com/i9eDT1dowk7i)，并解压
 
