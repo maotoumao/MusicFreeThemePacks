@@ -74,6 +74,11 @@ async function publish() {
                 themeMeta.id = nanoid();
             }
 
+            // 记录创建时间（首次加入时自动设置，永不更改）
+            if (!themeMeta.createdAt) {
+                themeMeta.createdAt = new Date().toISOString();
+            }
+
             // 复制到临时目录
             await fs.cp(`${THEMES_DIR}/${folder.name}`, `./.temp/${folder.name}`, {
                 recursive: true
@@ -123,6 +128,7 @@ async function publish() {
                 name: mergedConfig.name,
                 packageName: folder.name,
                 author: mergedConfig.author,
+                authorUrl: mergedConfig.authorUrl || '',
                 description: mergedConfig.description || '',
                 version: mergedConfig.version || '0.0.1',
                 type,
@@ -131,6 +137,7 @@ async function publish() {
                 themeUrl: `themes/${outputName}.mftheme`,
                 hash,
                 publishName: outputName,
+                createdAt: themeMeta.createdAt,
             };
 
         } catch (e) {
