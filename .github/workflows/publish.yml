@@ -41,12 +41,14 @@ jobs:
           git fetch origin v1/prod || true
           if git show-ref --verify --quiet refs/remotes/origin/v1/prod; then
             git checkout v1/prod
-            # 清空工作目录
             git rm -rf . || true
           else
             git checkout --orphan v1/prod
             git rm -rf . || true
           fi
+
+          # 清理所有未追踪文件（包括 node_modules、.publish 等）
+          git clean -fdx
 
           # 复制产物
           cp -r /tmp/publish-output/* .
