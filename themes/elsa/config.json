@@ -1,0 +1,12 @@
+{
+    "name": "艾莎",
+    "preview": "@/imgs/preview.jpg",
+    "author": "hope",
+    "description": "冰雪奇缘",
+    "version": "0.0.0",
+    "tags": [
+        "动漫",
+        "影视"
+    ],
+    "authorUrl": "https://github.com/Hopelsz"
+}

@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "MusicFree Theme Config",
+    "description": "MusicFree 主题包配置文件 Schema",
+    "type": "object",
+    "required": ["name", "author", "preview", "description", "version", "tags"],
+    "properties": {
+        "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 50,
+            "description": "主题显示名称"
+        },
+        "author": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 30,
+            "description": "作者名称"
+        },
+        "authorUrl": {
+            "type": "string",
+            "format": "uri",
+            "description": "作者主页链接（可选，如 GitHub 主页、个人网站等）"
+        },
+        "preview": {
+            "type": "string",
+            "minLength": 1,
+            "description": "预览图路径（@/目录/文件名）或 CSS 颜色值（#xxx）"
+        },
+        "description": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200,
+            "description": "主题描述"
+        },
+        "version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+$",
+            "description": "语义化版本号，如 0.0.1"
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1,
+            "maxItems": 5,
+            "description": "标签数组（需从 tags.json 预定义列表中选取）"
+        },
+        "iframe": {
+            "type": "object",
+            "properties": {
+                "app": {
+                    "type": "string",
+                    "pattern": "^@/iframes/.+\\.html$",
+                    "description": "动态主题 HTML 入口文件路径"
+                }
+            },
+            "required": ["app"],
+            "additionalProperties": false,
+            "description": "动态主题的 iframe 配置"
+        }
+    },
+    "additionalProperties": false
+}

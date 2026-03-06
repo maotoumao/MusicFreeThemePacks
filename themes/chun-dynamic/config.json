@@ -1,0 +1,15 @@
+{
+    "name": "椿【动态】",
+    "preview": "@/imgs/preview.jpg",
+    "version": "1.0.1",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    },
+    "author": "akFace",
+    "description": "椿",
+    "tags": [
+        "动态",
+        "动漫"
+    ],
+    "authorUrl": "https://github.com/akFace"
+}

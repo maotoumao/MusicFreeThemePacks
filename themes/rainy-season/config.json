@@ -1,0 +1,15 @@
+{
+    "name": "雨季",
+    "preview": "@/imgs/preview.png",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    },
+    "author": "猫头猫",
+    "tags": [
+        "动态",
+        "自然"
+    ],
+    "version": "0.0.1",
+    "description": "雨季动态主题",
+    "authorUrl": "https://github.com/maotoumao"
+}

@@ -1,0 +1,12 @@
+{
+    "name": "夏日莎",
+    "preview": "@/imgs/preview.jpg",
+    "author": "hope",
+    "description": "夏日莎",
+    "version": "0.0.0",
+    "tags": [
+        "动漫",
+        "季节"
+    ],
+    "authorUrl": "https://github.com/Hopelsz"
+}

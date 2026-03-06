@@ -1,0 +1,15 @@
+{
+    "name": "赛博朋克【动态】",
+    "preview": "@/imgs/preview.jpeg",
+    "description": "赛博朋克，视频作者：LiveWallpapers4K（pixabay）;ID是NANOID，21位",
+    "author": "麥天浩",
+    "version": "0.0.1",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    },
+    "tags": [
+        "动态",
+        "赛博"
+    ],
+    "authorUrl": "https://github.com/uuwor"
+}

@@ -1,0 +1,16 @@
+{
+    "name": "fliqlo",
+    "preview": "@/imgs/preview.png",
+    "description": "类似fliqlo的效果",
+    "author": "猫头猫",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    },
+    "tags": [
+        "动态",
+        "简约",
+        "暗色"
+    ],
+    "version": "0.0.1",
+    "authorUrl": "https://github.com/maotoumao"
+}

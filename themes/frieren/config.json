@@ -1,0 +1,10 @@
+{
+    "name": "frieren_4k",
+    "preview": "@/imgs/frieren_4k.jpg",
+    "description": "背景图片",
+    "author": "wfx",
+    "version": "0.0.0",
+    "tags": [
+        "动漫"
+    ]
+}

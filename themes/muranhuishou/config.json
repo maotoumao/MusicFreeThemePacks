@@ -1,0 +1,11 @@
+{
+    "name": "muranhuishou",
+    "preview": "@/imgs/muran.jpg",
+    "description": "慕然回首",
+    "author": "cianmoop",
+    "tags": [
+        "插画"
+    ],
+    "version": "0.0.1",
+    "authorUrl": "https://github.com/Cianmoop"
+}

@@ -1,0 +1,13 @@
+{
+    "name": "autumn",
+    "preview": "@/imgs/autumn.jpg",
+    "description": "插画作者: Bison倉鼠, https://www.pixiv.net/artworks/60095408 ",
+    "author": "beef-potato",
+    "tags": [
+        "风景",
+        "季节",
+        "插画"
+    ],
+    "version": "0.0.1",
+    "authorUrl": "https://github.com/beef-potato"
+}

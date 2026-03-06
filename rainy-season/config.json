@@ -1,8 +1,0 @@
-{
-    "name": "雨季",
-    "preview": "@/imgs/preview.png",
-    "iframe": {
-        "app": "@/iframes/app.html"
-    },
-    "author": "猫头猫"
-}

@@ -1,0 +1,11 @@
+{
+    "name": "海盗船",
+    "preview": "@/imgs/Pirates.jpg",
+    "description": "背景图片，优化歌曲详情页",
+    "author": "hope",
+    "version": "0.0.1",
+    "tags": [
+        "插画"
+    ],
+    "authorUrl": "https://github.com/Hopelsz"
+}

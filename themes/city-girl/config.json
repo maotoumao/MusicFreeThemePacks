@@ -1,0 +1,15 @@
+{
+    "name": "星光美少女【动态】",
+    "preview": "@/imgs/preview.jpg",
+    "description": "星光美少女",
+    "author": "hope",
+    "version": "0.0.0",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    },
+    "tags": [
+        "动态",
+        "动漫"
+    ],
+    "authorUrl": "https://github.com/Hopelsz"
+}

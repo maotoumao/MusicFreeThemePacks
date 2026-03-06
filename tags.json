@@ -1,0 +1,84 @@
+{
+    "tags": [
+        {
+            "key": "dark",
+            "label": "暗色",
+            "description": "深色/暗黑系主题"
+        },
+        {
+            "key": "light",
+            "label": "亮色",
+            "description": "浅色/明亮系主题"
+        },
+        {
+            "key": "gradient",
+            "label": "渐变",
+            "description": "渐变色背景主题"
+        },
+        {
+            "key": "minimalist",
+            "label": "简约",
+            "description": "简洁风格主题"
+        },
+        {
+            "key": "anime",
+            "label": "动漫",
+            "description": "动漫/二次元风格主题"
+        },
+        {
+            "key": "landscape",
+            "label": "风景",
+            "description": "自然风景背景主题"
+        },
+        {
+            "key": "illustration",
+            "label": "插画",
+            "description": "插画风格背景主题"
+        },
+        {
+            "key": "cyberpunk",
+            "label": "赛博",
+            "description": "赛博朋克/科技感主题"
+        },
+        {
+            "key": "pixel",
+            "label": "像素",
+            "description": "像素风格主题"
+        },
+        {
+            "key": "abstract",
+            "label": "抽象",
+            "description": "抽象艺术风格主题"
+        },
+        {
+            "key": "dynamic",
+            "label": "动态",
+            "description": "包含动画效果的主题"
+        },
+        {
+            "key": "cute",
+            "label": "可爱",
+            "description": "可爱/萌系风格主题"
+        },
+        {
+            "key": "game",
+            "label": "游戏",
+            "description": "游戏相关主题"
+        },
+        {
+            "key": "movie",
+            "label": "影视",
+            "description": "电影/动画电影相关主题"
+        },
+        {
+            "key": "season",
+            "label": "季节",
+            "description": "与季节相关的主题"
+        },
+        {
+            "key": "nature",
+            "label": "自然",
+            "description": "花、樱花、星空等自然元素主题"
+        }
+    ]
+}

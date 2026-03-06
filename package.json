@@ -1,9 +1,12 @@
 {
   "name": "musicfree-themepacks",
   "version": "1.0.0",
+  "type": "module",
   "description": "MusicFree主题包",
   "scripts": {
-    "publish": "node ./.scripts/publish.mjs"
+    "publish": "node ./.scripts/publish.mjs",
+    "validate": "node ./.scripts/validate.mjs",
+    "validate:theme": "node ./.scripts/validate.mjs --themes"
   },
   "keywords": [],
   "author": "maotoumao",
@@ -13,5 +16,8 @@
     "crypto-js": "^4.2.0",
     "nanoid": "^5.0.7",
     "rimraf": "^5.0.7"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
   }
 }

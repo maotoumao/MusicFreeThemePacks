@@ -1,0 +1,67 @@
+name: 发布到 v1/prod
+on:
+  push:
+    branches: [v1/source]
+  workflow_dispatch:
+
+jobs:
+  publish:
+    name: 打包并发布
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout v1/source
+        uses: actions/checkout@v4
+        with:
+          ref: v1/source
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run publish
+        run: node .scripts/publish.mjs
+
+      - name: Deploy to v1/prod
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # 暂存产物到临时目录
+          mkdir -p /tmp/publish-output
+          cp -r .publish/* /tmp/publish-output/
+
+          # 切换到 v1/prod 分支（如不存在则创建孤儿分支）
+          git fetch origin v1/prod || true
+          if git show-ref --verify --quiet refs/remotes/origin/v1/prod; then
+            git checkout v1/prod
+            # 清空工作目录
+            git rm -rf . || true
+          else
+            git checkout --orphan v1/prod
+            git rm -rf . || true
+          fi
+
+          # 复制产物
+          cp -r /tmp/publish-output/* .
+
+          # 提交并推送
+          git add .
+          git commit -m "Publish: $(date -u '+%Y-%m-%dT%H:%M:%SZ')" || echo "No changes to commit"
+          git push origin v1/prod --force
+
+      - name: Update meta.json on v1/source
+        run: |
+          git checkout v1/source
+          # 如果 meta.json 有变更（新增主题 ID），提交回 v1/source
+          if [ -n "$(git diff --name-only meta.json 2>/dev/null)" ]; then
+            git add meta.json
+            git commit -m "chore: update meta.json with new theme IDs"
+            git push origin v1/source
+          fi

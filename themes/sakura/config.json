@@ -1,0 +1,16 @@
+{
+    "name": "樱花",
+    "preview": "@/imgs/preview.png",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    },
+    "author": "猫头猫",
+    "tags": [
+        "动态",
+        "自然",
+        "季节"
+    ],
+    "version": "0.0.1",
+    "description": "樱花飘落动态主题",
+    "authorUrl": "https://github.com/maotoumao"
+}

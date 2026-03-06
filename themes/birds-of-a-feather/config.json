@@ -1,0 +1,15 @@
+{
+    "name": "飞鸟",
+    "preview": "@/imgs/preview.png",
+    "author": "猫头猫",
+    "iframe": {
+        "app": "@/iframes/app.html"
+    },
+    "tags": [
+        "动态",
+        "自然"
+    ],
+    "version": "0.0.1",
+    "description": "飞鸟动态主题",
+    "authorUrl": "https://github.com/maotoumao"
+}
