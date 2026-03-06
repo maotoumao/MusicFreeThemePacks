@@ -37,6 +37,12 @@ jobs:
           mkdir -p /tmp/publish-output
           cp -r .publish/* /tmp/publish-output/
 
+          # 备份更新后的 meta.json
+          cp meta.json /tmp/meta.json.updated
+
+          # 暂存工作区变更（publish 可能更新了 meta.json）
+          git stash --include-untracked
+
           # 切换到 v1/prod 分支（如不存在则创建孤儿分支）
           git fetch origin v1/prod || true
           if git show-ref --verify --quiet refs/remotes/origin/v1/prod; then
@@ -61,9 +67,11 @@ jobs:
       - name: Update meta.json on v1/source
         run: |
           git checkout v1/source
-          # 如果 meta.json 有变更（新增主题 ID），提交回 v1/source
+          git stash pop || true
+          # 用备份的 meta.json 覆盖（确保包含最新变更）
+          cp /tmp/meta.json.updated meta.json
           if [ -n "$(git diff --name-only meta.json 2>/dev/null)" ]; then
             git add meta.json
-            git commit -m "chore: update meta.json with new theme IDs"
+            git commit -m "chore: update meta.json"
             git push origin v1/source
           fi
