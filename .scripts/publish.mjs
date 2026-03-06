@@ -118,9 +118,6 @@ async function publish() {
             // 提取预览图
             const previewUrl = await extractPreview(folder.name, rawConfig);
 
-            // 推断类型
-            const type = rawConfig.iframe ? 'dynamic' : 'static';
-
             console.log(`  ✅ ${folder.name} → ${outputName}.mftheme`);
 
             return {
@@ -131,7 +128,6 @@ async function publish() {
                 authorUrl: mergedConfig.authorUrl || '',
                 description: mergedConfig.description || '',
                 version: mergedConfig.version || '0.0.1',
-                type,
                 tags: mergedConfig.tags || [],
                 preview: previewUrl || mergedConfig.preview,
                 themeUrl: `themes/${outputName}.mftheme`,
@@ -151,7 +147,17 @@ async function publish() {
     // 5. 过滤失败项
     const validThemes = themeConfigs.filter(Boolean);
 
-    // 6. 构建标签索引
+    // 6. 标记最新的 10 个主题为 isNew
+    const NEW_COUNT = 10;
+    const sortedByDate = [...validThemes]
+        .filter(t => t.createdAt)
+        .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+    const newIds = new Set(sortedByDate.slice(0, NEW_COUNT).map(t => t.id));
+    for (const theme of validThemes) {
+        theme.isNew = newIds.has(theme.id);
+    }
+
+    // 7. 构建标签索引
     const tagIndex = {};
     for (const theme of validThemes) {
         for (const tag of theme.tags) {
@@ -162,7 +168,7 @@ async function publish() {
         }
     }
 
-    // 7. 写入 publish.json
+    // 8. 写入 publish.json
     const publishData = {
         version: '1.0.0',
         updatedAt: new Date().toISOString(),
@@ -173,7 +179,7 @@ async function publish() {
 
     await fs.writeFile('./.publish/publish.json', JSON.stringify(publishData, null, 2), 'utf-8');
 
-    // 8. 更新 meta.json
+    // 9. 更新 meta.json
     await fs.writeFile('./meta.json', JSON.stringify(meta, undefined, 4), 'utf-8');
 
     console.log('');
