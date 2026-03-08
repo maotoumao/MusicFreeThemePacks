@@ -3,10 +3,10 @@
     "name": "gradient",
     "preview": "@/imgs/preview.png",
     "description": "渐变色主题, 自定义参数好多，眼睛看花了",
+    "version": "0.0.1",
+    "authorUrl": "https://github.com/beef-potato",
     "tags": [
         "渐变",
         "简约"
-    ],
-    "version": "0.0.1",
-    "authorUrl": "https://github.com/beef-potato"
+    ]
 }

@@ -7,10 +7,10 @@
     "author": "猫头猫",
     "description": "背景源代码：https://codesandbox.io/embed/word-rain-e4itf",
     "version": "0.0.0",
+    "authorUrl": "https://github.com/maotoumao",
     "tags": [
         "动态",
         "赛博",
         "暗色"
-    ],
-    "authorUrl": "https://github.com/maotoumao"
+    ]
 }

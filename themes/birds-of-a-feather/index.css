@@ -1,43 +1,59 @@
+/*
+ * Upgraded for MusicFree Desktop v2 semantic token system
+ */
 :root {
-  --textColor: #56534c !important;
-  --textSecondaryColor: #aaaaaa !important;
-  --shadowColor: rgba(0, 0, 0, 0.3) !important;
-  --dividerColor: rgba(255, 255, 255, 0.1) !important;
-  --maskColor: rgba(33, 33, 33, 0.2) !important;
-  --backdropColor: #eee4ff !important;
-  --primaryColor: #ff7695 !important;
-  --backgroundColor: #fff1f1 !important;
 
+    /* ── Background ── */
+    --color-bg-base: rgb(255, 241, 241);
+    --color-bg-sidebar: rgba(255, 241, 241, 0.4);
+    --color-bg-player: rgba(255, 241, 241, 0.85);
+    --color-bg-surface: rgba(0, 0, 0, 0.03);
+    --color-bg-surface-raised: rgba(0, 0, 0, 0.06);
+    --color-bg-drawer: rgba(255, 241, 241, 0.95);
+    --color-bg-overlay: rgba(33, 33, 33, 0.2);
+    --color-bg-modal: rgb(238, 228, 255);
+    --color-bg-popover: rgba(238, 228, 255, 0.95);
+    --color-bg-fullscreen: rgb(255, 241, 241);
+    --color-bg-placeholder: rgba(222, 222, 222, 0.73);
 
-  --placeholderColor: #dededeba !important;
+    /* ── Fill ── */
+    --color-fill-brand: rgb(255, 118, 149);
+    --color-fill-brand-hover: rgba(255, 118, 149, 0.85);
+    --color-fill-brand-muted: rgba(255, 118, 149, 0.15);
+    --color-fill-neutral: rgba(0, 0, 0, 0.1);
+    --color-fill-neutral-hover: rgba(0, 0, 0, 0.16);
+    --color-fill-neutral-active: rgba(0, 0, 0, 0.2);
+    --color-fill-subtle: rgba(0, 0, 0, 0.05);
+    --color-fill-subtle-hover: rgba(0, 0, 0, 0.1);
 
+    /* ── Text ── */
+    --color-text-primary: rgb(86, 83, 76);
+    --color-text-secondary: rgb(170, 170, 170);
+    --color-text-muted: rgba(86, 83, 76, 0.6);
+    --color-text-placeholder: rgba(86, 83, 76, 0.5);
+    --color-text-disabled: rgba(86, 83, 76, 0.3);
+    --color-text-brand: rgb(255, 118, 149);
+    --color-text-on-brand: rgb(18, 18, 18);
+
+    /* ── Border ── */
+    --color-border-default: rgba(0, 0, 0, 0.1);
+    --color-border-subtle: rgba(0, 0, 0, 0.05);
+    --color-border-strong: rgba(0, 0, 0, 0.16);
+    --color-border-focus: rgba(0, 0, 0, 0.2);
+    --color-border-brand: rgba(255, 118, 149, 0.3);
+
+    /* ── Shadow ── */
+    --shadow-sm: 0 6px 16px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.45);
+
+    /* ── Background Image ── */
+    --bg-image: none;
 }
 
-
-.right-part {
-  --headerTextColor: #333 !important;
+.l-sidebar {
+    backdrop-filter: blur(var(--blur-sm));
 }
 
-.music-detail-background {
-  mask-image: none !important;
-  -webkit-mask-image: none !important;
-}
-
-.header-container,
-.music-bar-container {
-  background-color: transparent !important;
-  backdrop-filter: blur(10px);
-}
-
-
-.body-container {
-  background-color: rgba(128,128,128,0.1);
-}
-
-.app-container {
-  backdrop-filter: blur(2px);
-}
-
-a {
-    color: #184db3 !important;
+.l-player-bar {
+    backdrop-filter: blur(var(--blur-sm));
 }

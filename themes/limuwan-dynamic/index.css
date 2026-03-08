@@ -1,60 +1,60 @@
+/*
+ * Upgraded for MusicFree Desktop v2 semantic token system
+ */
 :root {
-  --textColor: #fdfdfd !important;
-  --textSecondaryColor: #aaa !important;
-  --shadowColor: none !important;
-  --dividerColor: rgba(255, 255, 255, 0.1) !important;
-  --maskColor: rgba(33, 33, 33, 0.2) !important;
-  --backdropColor: #5F7DAD !important;
-  --primaryColor: #41d4e3 !important;
-  --backgroundColor: #5F7DAD !important;
-  --headerTextColor: #ddd !important;
-  --placeholderColor: #dededeba !important;
 
-}
-/* 消除滚动条 */
-#root *::-webkit-scrollbar {
-  display: none !important;
-}
+    /* ── Background ── */
+    --color-bg-base: rgb(95, 125, 173);
+    --color-bg-sidebar: rgba(95, 125, 173, 0.4);
+    --color-bg-player: rgba(95, 125, 173, 0.85);
+    --color-bg-surface: rgba(255, 255, 255, 0.04);
+    --color-bg-surface-raised: rgba(255, 255, 255, 0.08);
+    --color-bg-drawer: rgba(86, 113, 156, 0.95);
+    --color-bg-overlay: rgba(33, 33, 33, 0.2);
+    --color-bg-modal: rgb(95, 125, 173);
+    --color-bg-popover: rgba(95, 125, 173, 0.95);
+    --color-bg-fullscreen: rgb(95, 125, 173);
+    --color-bg-placeholder: rgba(222, 222, 222, 0.73);
 
-.right-part {
-  --headerTextColor: #ddd !important;
-}
+    /* ── Fill ── */
+    --color-fill-brand: rgb(65, 212, 227);
+    --color-fill-brand-hover: rgba(65, 212, 227, 0.85);
+    --color-fill-brand-muted: rgba(65, 212, 227, 0.15);
+    --color-fill-neutral: rgba(255, 255, 255, 0.1);
+    --color-fill-neutral-hover: rgba(255, 255, 255, 0.16);
+    --color-fill-neutral-active: rgba(255, 255, 255, 0.2);
+    --color-fill-subtle: rgba(255, 255, 255, 0.05);
+    --color-fill-subtle-hover: rgba(255, 255, 255, 0.1);
 
-.music-detail-background {
-  mask-image: none !important;
-  -webkit-mask-image: none !important;
-}
+    /* ── Text ── */
+    --color-text-primary: rgb(253, 253, 253);
+    --color-text-secondary: rgb(170, 170, 170);
+    --color-text-muted: rgba(253, 253, 253, 0.6);
+    --color-text-placeholder: rgba(253, 253, 253, 0.5);
+    --color-text-disabled: rgba(253, 253, 253, 0.3);
+    --color-text-brand: rgb(65, 212, 227);
+    --color-text-on-brand: rgb(18, 18, 18);
 
-/* 音乐详情页 */
-.music-detail-container {
-  background-image: none !important;
-  background-color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
-  top: -54px !important;
-  bottom: -64px !important;
-  padding-top: 64px !important;
-  overflow: hidden !important;
-  mask-image: none !important;
-  -webkit-mask-image: none !important;
-}
+    /* ── Border ── */
+    --color-border-default: rgba(255, 255, 255, 0.1);
+    --color-border-subtle: rgba(255, 255, 255, 0.05);
+    --color-border-strong: rgba(255, 255, 255, 0.16);
+    --color-border-focus: rgba(255, 255, 255, 0.2);
+    --color-border-brand: rgba(65, 212, 227, 0.3);
 
-.hide-music-detail {
-  right: 100px !important;
-}
+    /* ── Shadow ── */
+    --shadow-sm: none;
+    --shadow-md: none;
+    --shadow-lg: none;
 
-.music-detail--container .music-body .music-album-options {
-  margin-top: -4rem;
-}
-
-.header-container,
-.music-bar-container {
-  background-color: transparent !important;
-  /* backdrop-filter: blur(10px) !important; */
+    /* ── Background Image ── */
+    --bg-image: none;
 }
 
-a {
-  color: #41d4e3 !important;
+.l-sidebar {
+    backdrop-filter: blur(var(--blur-sm));
+}
+
+.l-player-bar {
+    backdrop-filter: blur(var(--blur-sm));
 }

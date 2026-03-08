@@ -6,10 +6,10 @@
     "iframe": {
         "app": "@/iframes/app.html"
     },
+    "version": "0.0.1",
+    "authorUrl": "https://github.com/beef-potato",
     "tags": [
         "动态",
         "赛博"
-    ],
-    "version": "0.0.1",
-    "authorUrl": "https://github.com/beef-potato"
+    ]
 }

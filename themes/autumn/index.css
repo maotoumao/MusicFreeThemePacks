@@ -1,52 +1,65 @@
-#root {
-  background: url("@/imgs/autumn.jpg") !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-}
-
+/*
+ * Upgraded for MusicFree Desktop v2 semantic token system
+ */
 :root {
-  --textColor: #011526 !important;
-  --textSecondaryColor: #000000 !important;
-  --backgroundColor: #F2F0D5 !important;
-  --shadowColor: rgba(0, 0, 0, 0.15) !important;
-  --dividerColor: rgba(255, 255, 255, 0.1) !important;
-  --maskColor: rgba(242, 191, 179, 0.3) !important;
-  --primaryColor: #F2B749 !important;
-  --listHoverColor: rgba(59, 31, 54, 0.1) !important;
-  --listActiveColor: rgba(59, 31, 54, 0.3) !important;
-  --placeholderColor: rgba(255,255,255,0.4) !important;
 
+    /* ── Background ── */
+    --color-bg-base: rgb(242, 240, 213);
+    --color-bg-sidebar: rgba(242, 240, 213, 0.4);
+    --color-bg-player: rgba(242, 240, 213, 0.85);
+    --color-bg-surface: rgba(0, 0, 0, 0.03);
+    --color-bg-surface-raised: rgba(0, 0, 0, 0.06);
+    --color-bg-drawer: rgba(242, 240, 214, 0.95);
+    --color-bg-overlay: rgba(242, 191, 179, 0.3);
+    --color-bg-modal: rgb(243, 241, 215);
+    --color-bg-popover: rgba(243, 241, 215, 0.95);
+    --color-bg-fullscreen: rgb(242, 240, 213);
+    --color-bg-placeholder: rgba(255, 255, 255, 0.4);
+
+    /* ── Fill ── */
+    --color-fill-brand: rgb(242, 183, 73);
+    --color-fill-brand-hover: rgba(242, 183, 73, 0.85);
+    --color-fill-brand-muted: rgba(242, 183, 73, 0.15);
+    --color-fill-neutral: rgba(0, 0, 0, 0.1);
+    --color-fill-neutral-hover: rgba(0, 0, 0, 0.16);
+    --color-fill-neutral-active: rgba(0, 0, 0, 0.2);
+    --color-fill-subtle: rgba(0, 0, 0, 0.05);
+    --color-fill-subtle-hover: rgba(0, 0, 0, 0.1);
+
+    /* ── Text ── */
+    --color-text-primary: rgb(1, 21, 38);
+    --color-text-secondary: rgb(0, 0, 0);
+    --color-text-muted: rgba(1, 21, 38, 0.6);
+    --color-text-placeholder: rgba(1, 21, 38, 0.5);
+    --color-text-disabled: rgba(1, 21, 38, 0.3);
+    --color-text-brand: rgb(242, 183, 73);
+    --color-text-on-brand: rgb(18, 18, 18);
+
+    /* ── Border ── */
+    --color-border-default: rgba(0, 0, 0, 0.1);
+    --color-border-subtle: rgba(0, 0, 0, 0.05);
+    --color-border-strong: rgba(0, 0, 0, 0.16);
+    --color-border-focus: rgba(0, 0, 0, 0.2);
+    --color-border-brand: rgba(242, 183, 73, 0.3);
+
+    /* ── Shadow ── */
+    --shadow-sm: 0 6px 16px rgba(0, 0, 0, 0.15);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.22);
+
+    /* ── Background Image ── */
+    --bg-image: url("@/imgs/autumn.jpg");
 }
 
-.right-part {
-  --headerTextColor: #333 !important;
+body[data-window='main'] {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.music-detail-background {
-  mask-image: none !important;
-  -webkit-mask-image: none !important;
+.l-sidebar {
+    backdrop-filter: blur(var(--blur-sm));
 }
 
-.header-container,
-.music-bar-container {
-  background-color: transparent !important;
-  backdrop-filter: blur(10px);
-}
-
-
-input + svg {
-    color: white !important;
-    opacity: 0.7 !important;
-}
-
-.header-search {
-    background-color: #666 !important;
-}
-
-.header-search input {
-    background-color: transparent !important;
-}
-
-a {
-    color: #8bd1ed !important;
+.l-player-bar {
+    backdrop-filter: blur(var(--blur-sm));
 }

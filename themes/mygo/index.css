@@ -1,55 +1,65 @@
-#root {
-  background: url("@/imgs/mygo.jpg") !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-}
-
+/*
+ * Upgraded for MusicFree Desktop v2 semantic token system
+ */
 :root {
-  --textColor: #ffffff !important;
-  --textSecondaryColor: #000000 !important;
-  --backgroundColor: #8a86b3 !important;
-  --shadowColor: rgba(0, 0, 0, 0.15) !important;
-  --dividerColor: rgba(255, 255, 255, 0.1) !important;
-  --maskColor: none !important;
-  --backdropColor: #253c68 !important;
-  --primaryColor: #FF8899 !important;
-  /* 播放键的颜色，以及文字被选中的颜色*/
-  --listHoverColor: rgba(0, 0, 0, 0.1) !important;
-  --listActiveColor: rgba(0, 0, 0, 0.3) !important;
-  --placeholderColor: #424242 !important;
 
+    /* ── Background ── */
+    --color-bg-base: rgb(138, 134, 179);
+    --color-bg-sidebar: rgba(138, 134, 179, 0.4);
+    --color-bg-player: rgba(138, 134, 179, 0.85);
+    --color-bg-surface: rgba(255, 255, 255, 0.04);
+    --color-bg-surface-raised: rgba(255, 255, 255, 0.08);
+    --color-bg-drawer: rgba(124, 121, 161, 0.95);
+    --color-bg-overlay: rgba(0, 0, 0, 0.6);
+    --color-bg-modal: rgb(37, 60, 104);
+    --color-bg-popover: rgba(37, 60, 104, 0.95);
+    --color-bg-fullscreen: rgb(138, 134, 179);
+    --color-bg-placeholder: rgb(66, 66, 66);
+
+    /* ── Fill ── */
+    --color-fill-brand: rgb(255, 136, 153);
+    --color-fill-brand-hover: rgba(255, 136, 153, 0.85);
+    --color-fill-brand-muted: rgba(255, 136, 153, 0.15);
+    --color-fill-neutral: rgba(255, 255, 255, 0.1);
+    --color-fill-neutral-hover: rgba(255, 255, 255, 0.16);
+    --color-fill-neutral-active: rgba(255, 255, 255, 0.2);
+    --color-fill-subtle: rgba(255, 255, 255, 0.05);
+    --color-fill-subtle-hover: rgba(255, 255, 255, 0.1);
+
+    /* ── Text ── */
+    --color-text-primary: rgb(255, 255, 255);
+    --color-text-secondary: rgb(0, 0, 0);
+    --color-text-muted: rgba(255, 255, 255, 0.6);
+    --color-text-placeholder: rgba(255, 255, 255, 0.5);
+    --color-text-disabled: rgba(255, 255, 255, 0.3);
+    --color-text-brand: rgb(255, 136, 153);
+    --color-text-on-brand: rgb(18, 18, 18);
+
+    /* ── Border ── */
+    --color-border-default: rgba(255, 255, 255, 0.1);
+    --color-border-subtle: rgba(255, 255, 255, 0.05);
+    --color-border-strong: rgba(255, 255, 255, 0.16);
+    --color-border-focus: rgba(255, 255, 255, 0.2);
+    --color-border-brand: rgba(255, 136, 153, 0.3);
+
+    /* ── Shadow ── */
+    --shadow-sm: 0 6px 16px rgba(0, 0, 0, 0.15);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.22);
+
+    /* ── Background Image ── */
+    --bg-image: url("@/imgs/mygo.jpg");
 }
 
-.right-part {
-  --headerTextColor: #333 !important;
+body[data-window='main'] {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-
-.music-detail-background {
-  mask-image: none !important;
-  -webkit-mask-image: none !important;
+.l-sidebar {
+    backdrop-filter: blur(var(--blur-sm));
 }
 
-.header-container,
-.music-bar-container {
-  background-color: transparent !important;
-  backdrop-filter: blur(10px);
-}
-
-
-input + svg {
-    color: white !important;
-    opacity: 0.7 !important;
-}
-
-.header-search {
-    background-color: #666 !important;
-}
-
-.header-search input {
-    background-color: transparent !important;
-}
-
-a {
-    color: #8bd1ed !important;
+.l-player-bar {
+    backdrop-filter: blur(var(--blur-sm));
 }

@@ -110,7 +110,6 @@
     </style>
   </head>
   <body>
-    <canvas id="sakura"></canvas>
     <canvas id="canv"></canvas>
     <div class="sky">
       <div class="clouds">
@@ -719,13 +718,15 @@
       }
       draw();
       window.addEventListener("resize", function () {
-        if (c.width !== window.innerWidth || c.height !== window.innerHeight) {
+        var canv = document.getElementById("canv");
+        if (canv && (canv.width !== window.innerWidth || canv.height !== window.innerHeight)) {
           Bird.canv = {
-            w: (c.width = window.innerWidth),
-            h: (c.height = window.innerHeight),
+            w: (canv.width = window.innerWidth),
+            h: (canv.height = window.innerHeight),
           };
         }
       });
+      window.onerror = function() { return true; };
     </script>
   </body>
 </html>

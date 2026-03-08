@@ -5,11 +5,11 @@
         "app": "@/iframes/app.html"
     },
     "author": "猫头猫",
+    "version": "0.0.1",
+    "description": "雨季动态主题",
+    "authorUrl": "https://github.com/maotoumao",
     "tags": [
         "动态",
         "自然"
-    ],
-    "version": "0.0.1",
-    "description": "雨季动态主题",
-    "authorUrl": "https://github.com/maotoumao"
+    ]
 }

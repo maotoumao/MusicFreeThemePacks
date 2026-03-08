@@ -1,49 +1,65 @@
-#root {
-  background: url("@/imgs/frieren_4k.jpg") !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-}
-
+/*
+ * Upgraded for MusicFree Desktop v2 semantic token system
+ */
 :root {
-  --textColor: #fcfcfc !important;
-  --primaryColor: #d38188 !important;
-  --hoverColor: rgba(255, 255, 255, 0.05) !important;
-  --backgroundColor: #2d2e3d !important;
-  // --shadowColor: rgba(128, 128, 128, 0.1) !important;
-  --dividerColor: rgba(255, 255, 255, 0.1) !important;
-  --maskColor: rgba(33, 33, 33, 0.8) !important;
-  --placeholderColor: rgba(131, 131, 131, 0.6) !important;
+
+    /* ── Background ── */
+    --color-bg-base: rgb(45, 46, 61);
+    --color-bg-sidebar: rgba(45, 46, 61, 0.4);
+    --color-bg-player: rgba(45, 46, 61, 0.85);
+    --color-bg-surface: rgba(255, 255, 255, 0.04);
+    --color-bg-surface-raised: rgba(255, 255, 255, 0.08);
+    --color-bg-drawer: rgba(41, 41, 55, 0.95);
+    --color-bg-overlay: rgba(33, 33, 33, 0.8);
+    --color-bg-modal: rgb(41, 41, 55);
+    --color-bg-popover: rgba(41, 41, 55, 0.95);
+    --color-bg-fullscreen: rgb(45, 46, 61);
+    --color-bg-placeholder: rgba(131, 131, 131, 0.6);
+
+    /* ── Fill ── */
+    --color-fill-brand: rgb(211, 129, 136);
+    --color-fill-brand-hover: rgba(211, 129, 136, 0.85);
+    --color-fill-brand-muted: rgba(211, 129, 136, 0.15);
+    --color-fill-neutral: rgba(255, 255, 255, 0.1);
+    --color-fill-neutral-hover: rgba(255, 255, 255, 0.16);
+    --color-fill-neutral-active: rgba(255, 255, 255, 0.2);
+    --color-fill-subtle: rgba(255, 255, 255, 0.05);
+    --color-fill-subtle-hover: rgba(255, 255, 255, 0.1);
+
+    /* ── Text ── */
+    --color-text-primary: rgb(252, 252, 252);
+    --color-text-secondary: rgba(252, 252, 252, 0.7);
+    --color-text-muted: rgba(252, 252, 252, 0.6);
+    --color-text-placeholder: rgba(252, 252, 252, 0.5);
+    --color-text-disabled: rgba(252, 252, 252, 0.3);
+    --color-text-brand: rgb(211, 129, 136);
+    --color-text-on-brand: rgb(18, 18, 18);
+
+    /* ── Border ── */
+    --color-border-default: rgba(255, 255, 255, 0.1);
+    --color-border-subtle: rgba(255, 255, 255, 0.05);
+    --color-border-strong: rgba(255, 255, 255, 0.16);
+    --color-border-focus: rgba(255, 255, 255, 0.2);
+    --color-border-brand: rgba(211, 129, 136, 0.3);
+
+    /* ── Shadow ── */
+    --shadow-sm: 0 6px 16px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+    /* ── Background Image ── */
+    --bg-image: url("@/imgs/frieren_4k.jpg");
 }
 
-.side-bar-container,
-.page-container {
-  background-color: rgba(33, 33, 33, 0.5) !important;
+body[data-window='main'] {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.side-bar--list-item-container[data-selected="true"] {
-  background-color: rgba(255, 255, 255, 0.05) !important;
+.l-sidebar {
+    backdrop-filter: blur(var(--blur-sm));
 }
 
-.header-container,
-.music-bar-container {
-  background-color: rgba(33, 33, 33, 0.5) !important;
-  backdrop-filter: blur(10px) !important;
-}
-
-
-input + svg {
-  color: white !important;
-  opacity: 0.7 !important;
-}
-
-.header-search {
-  background-color: #666 !important;
-}
-
-.header-search input {
-  background-color: transparent !important;
-}
-
-a {
-  color: #8bd1ed !important;
+.l-player-bar {
+    backdrop-filter: blur(var(--blur-sm));
 }

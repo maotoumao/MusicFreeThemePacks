@@ -7,10 +7,10 @@
     "iframe": {
         "app": "@/iframes/app.html"
     },
+    "authorUrl": "https://github.com/Hopelsz",
     "tags": [
         "动态",
         "动漫",
         "游戏"
-    ],
-    "authorUrl": "https://github.com/Hopelsz"
+    ]
 }

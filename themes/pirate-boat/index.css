@@ -1,73 +1,61 @@
-#root {
-  background: url("@/imgs/Pirates.jpg") !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-}
-
+/*
+ * Upgraded for MusicFree Desktop v2 semantic token system
+ */
 :root {
-  --textColor: #ffffff !important;
-  --primaryColor: #7E98FF !important;
-  --hoverColor: rgb(76, 112, 136) !important;
-  --backgroundColor: #315472 !important;
-  --dividerColor: transparent !important;
-  --placeholderColor: #28425a !important;
+
+    /* ── Background ── */
+    --color-bg-base: rgb(49, 84, 114);
+    --color-bg-sidebar: rgba(49, 84, 114, 0.4);
+    --color-bg-player: rgba(49, 84, 114, 0.85);
+    --color-bg-surface: rgba(255, 255, 255, 0.04);
+    --color-bg-surface-raised: rgba(255, 255, 255, 0.08);
+    --color-bg-drawer: rgba(44, 76, 103, 0.95);
+    --color-bg-overlay: rgba(0, 0, 0, 0.6);
+    --color-bg-modal: rgb(44, 76, 103);
+    --color-bg-popover: rgba(44, 76, 103, 0.95);
+    --color-bg-fullscreen: rgb(49, 84, 114);
+    --color-bg-placeholder: rgb(40, 66, 90);
+
+    /* ── Fill ── */
+    --color-fill-brand: rgb(126, 152, 255);
+    --color-fill-brand-hover: rgba(126, 152, 255, 0.85);
+    --color-fill-brand-muted: rgba(126, 152, 255, 0.15);
+    --color-fill-neutral: rgba(255, 255, 255, 0.1);
+    --color-fill-neutral-hover: rgba(255, 255, 255, 0.16);
+    --color-fill-neutral-active: rgba(255, 255, 255, 0.2);
+    --color-fill-subtle: rgba(255, 255, 255, 0.05);
+    --color-fill-subtle-hover: rgba(255, 255, 255, 0.1);
+
+    /* ── Text ── */
+    --color-text-primary: rgb(255, 255, 255);
+    --color-text-secondary: rgba(255, 255, 255, 0.7);
+    --color-text-muted: rgba(255, 255, 255, 0.6);
+    --color-text-placeholder: rgba(255, 255, 255, 0.5);
+    --color-text-disabled: rgba(255, 255, 255, 0.3);
+    --color-text-brand: rgb(126, 152, 255);
+    --color-text-on-brand: rgb(18, 18, 18);
+
+    /* ── Border ── */
+    --color-border-default: rgba(255, 255, 255, 0.05);
+    --color-border-subtle: rgba(255, 255, 255, 0.05);
+    --color-border-strong: rgba(255, 255, 255, 0.16);
+    --color-border-focus: rgba(255, 255, 255, 0.2);
+    --color-border-brand: rgba(126, 152, 255, 0.3);
+
+    /* ── Background Image ── */
+    --bg-image: url("@/imgs/Pirates.jpg");
 }
 
-#root *::-webkit-scrollbar {
-  display: none !important;
+body[data-window='main'] {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.header-container,
-.music-bar-container {
-  background-color: transparent !important;
+.l-sidebar {
+    backdrop-filter: blur(var(--blur-sm));
 }
 
-input+svg {
-  color: #365C7D !important;
-  opacity: 0.7 !important;
-}
-
-.header-search input {
-  background-color: transparent !important;
-}
-
-a {
-  color: #6eff81 !important;
-}
-
-/* 歌曲详情页 */
-.music-detail-container {
-  background-image: url("@/imgs/Pirates.jpg") !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  top: -54px !important;
-  bottom: -64px !important;
-  padding-top: 64px !important;
-}
-
-.hide-music-detail {
-  top: 100px !important;
-  right: 100px !important;
-}
-
-/* 歌词高亮 */
-.lyric-item {
-  opacity: 0.3 !important;
-
-  &[data-highlight="true"] {
-    color: #eeff00 !important;
-    font-size: 1.2em !important;
-    font-weight: 600 !important;
-    opacity: 1 !important;
-  }
-}
-
-/* 上一曲/下一曲 */
-.skip:hover {
-  color: #00ee20 !important;
-}
-
-/* 音量大小边框圆角 */
-.volume-bubble-container {
-  border-radius: 5px !important;
+.l-player-bar {
+    backdrop-filter: blur(var(--blur-sm));
 }

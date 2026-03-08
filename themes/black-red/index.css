@@ -1,90 +1,48 @@
+/*
+ * Upgraded for MusicFree Desktop v2 semantic token system
+ */
 :root {
-  --textColor: rgb(180, 180, 180) !important;
 
-  --textSecondaryColor: rgb(180, 180, 180) !important;
+    /* ── Background ── */
+    --color-bg-base: rgb(0, 0, 0);
+    --color-bg-sidebar: rgba(0, 0, 0, 0.65);
+    --color-bg-player: rgba(0, 0, 0, 0.92);
+    --color-bg-surface: rgba(255, 255, 255, 0.04);
+    --color-bg-surface-raised: rgba(255, 255, 255, 0.08);
+    --color-bg-drawer: rgba(0, 0, 0, 0.95);
+    --color-bg-overlay: rgba(18, 18, 18, 0.7);
+    --color-bg-modal: rgb(0, 0, 0);
+    --color-bg-popover: rgba(0, 0, 0, 0.95);
+    --color-bg-fullscreen: rgb(0, 0, 0);
+    --color-bg-placeholder: rgb(65, 65, 65);
 
-  --backgroundColor: rgb(0, 0, 0) !important;
+    /* ── Fill ── */
+    --color-fill-brand: rgb(125, 0, 0);
+    --color-fill-brand-hover: rgba(125, 0, 0, 0.85);
+    --color-fill-brand-muted: rgba(125, 0, 0, 0.15);
+    --color-fill-neutral: rgba(255, 255, 255, 0.1);
+    --color-fill-neutral-hover: rgba(255, 255, 255, 0.16);
+    --color-fill-neutral-active: rgba(255, 255, 255, 0.2);
+    --color-fill-subtle: rgba(255, 255, 255, 0.05);
+    --color-fill-subtle-hover: rgba(255, 255, 255, 0.1);
 
-  --shadowColor: rgb(54, 54, 54) !important;
+    /* ── Text ── */
+    --color-text-primary: rgb(180, 180, 180);
+    --color-text-secondary: rgb(180, 180, 180);
+    --color-text-muted: rgba(180, 180, 180, 0.6);
+    --color-text-placeholder: rgba(180, 180, 180, 0.5);
+    --color-text-disabled: rgba(180, 180, 180, 0.3);
+    --color-text-brand: rgb(125, 0, 0);
+    --color-text-on-brand: rgb(255, 255, 255);
 
-  --dividerColor: rgb(65, 65, 65) !important;
+    /* ── Border ── */
+    --color-border-default: rgba(255, 255, 255, 0.25);
+    --color-border-subtle: rgba(255, 255, 255, 0.05);
+    --color-border-strong: rgba(255, 255, 255, 0.16);
+    --color-border-focus: rgba(255, 255, 255, 0.2);
+    --color-border-brand: rgba(125, 0, 0, 0.3);
 
-  --maskColor: rgb(18, 18, 18, 0.7) !important;
-
-  --backdropColor: rgb(0, 0, 0) !important;
-
-  --listHoverColor: none !important;
-
-  --listActiveColor: none !important;
-
-  --placeholderColor: rgb(65, 65, 65) !important;
-  --primaryColor: rgb(125, 0, 0) !important;
-}
-
-
-/*音乐详情页背景*/
-.music-detail-background {
-  background: rgb(20, 20, 20) !important;
-  mask-image: none !important;
-  -webkit-mask-image: none !important;
-}
-
-.header-container,
-.music-bar-container {
-  background-color: rgb(0, 0, 0) !important;
-}
-
-.body-container {
-  background-color: rgb(20, 20, 20);
-}
-
-input+svg {
-  color: rgb(180, 180, 180) !important;
-  opacity: 0.1 !important;
-}
-
-/*搜索框*/
-.header-search {
-  background-color: rgb(20, 20, 20) !important;
-}
-
-.header-search input {
-  background-color: transparent !important;
-}
-
-/*软件内涉及到超链接的字体颜色*/
-a {
-  color: rgb(200, 120, 30) !important;
-}
-
-.hide-music-detail {
-  top: 100px !important;
-  right: 100px !important;
-}
-
-/* 歌词高亮 */
-.lyric-item {
-  opacity: 0.2 !important;
-
-  &[data-highlight="true"] {
-    color: #ffff !important;
-    font-size: 1.2em !important;
-    font-weight: 600 !important;
-    opacity: 1 !important;
-  }
-}
-
-/* 消除滚动条 */
-#root *::-webkit-scrollbar {
-  display: none !important;
-}
-
-/* 上一曲/下一曲 */
-.skip:hover {
-  color: #00ee20 !important;
-}
-
-/* 音量大小边框圆角 */
-.volume-bubble-container {
-  border-radius: 5px !important;
+    /* ── Shadow ── */
+    --shadow-sm: 0 6px 16px rgba(0, 0, 0, 0.25);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.38);
 }

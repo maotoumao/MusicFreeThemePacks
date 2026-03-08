@@ -7,9 +7,9 @@
     "iframe": {
         "app": "@/iframes/app.html"
     },
+    "authorUrl": "https://github.com/uuwor",
     "tags": [
         "动态",
         "赛博"
-    ],
-    "authorUrl": "https://github.com/uuwor"
+    ]
 }

@@ -5,12 +5,12 @@
         "app": "@/iframes/app.html"
     },
     "author": "猫头猫",
+    "version": "0.0.1",
+    "description": "樱花飘落动态主题",
+    "authorUrl": "https://github.com/maotoumao",
     "tags": [
         "动态",
         "自然",
         "季节"
-    ],
-    "version": "0.0.1",
-    "description": "樱花飘落动态主题",
-    "authorUrl": "https://github.com/maotoumao"
+    ]
 }

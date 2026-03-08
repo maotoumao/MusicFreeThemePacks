@@ -3,10 +3,10 @@
     "preview": "#000",
     "author": "猫头猫",
     "description": "暗黑模式，好黑啊。",
+    "version": "0.0.1",
+    "authorUrl": "https://github.com/maotoumao",
     "tags": [
         "暗色",
         "简约"
-    ],
-    "version": "0.0.1",
-    "authorUrl": "https://github.com/maotoumao"
+    ]
 }
