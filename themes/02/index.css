@@ -1,0 +1,66 @@
+:root {
+  --textColor: #fdfdfd !important;
+  --textSecondaryColor: #aaa !important;
+  --shadowColor: none !important;
+  --dividerColor: rgba(255, 255, 255, 0.1) !important;
+  --maskColor: rgba(33, 33, 33, 0.2) !important;
+  --backdropColor: #16192c !important;
+  --primaryColor: #a12d8d !important;
+  --backgroundColor: #16192c !important;
+  --headerTextColor: #ddd !important;
+  --placeholderColor: #dededeba !important;
+
+}
+/* 消除滚动条 */
+#root *::-webkit-scrollbar {
+  display: none !important;
+}
+
+.right-part {
+  --headerTextColor: #ddd !important;
+}
+
+.music-detail-background {
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+}
+
+/* 音乐详情页 */
+.music-detail-container {
+  background-image: none !important;
+  background-color: transparent !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  top: -54px !important;
+  bottom: -64px !important;
+  padding-top: 64px !important;
+  overflow: hidden !important;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+}
+
+.hide-music-detail {
+  right: 100px !important;
+}
+
+.music-detail--container .music-body .music-album-options {
+  margin-top: -4rem;
+}
+
+.header-container,
+.music-bar-container {
+  background-color: transparent !important;
+  /* backdrop-filter: blur(10px) !important; */
+}
+
+.music-controller .play-or-pause {
+    width: 75px !important;
+    height: 40px !important;
+    border-radius: 30px !important;
+}
+
+a {
+  color: #a12d8d !important;
+}

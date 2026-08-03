@@ -1,0 +1,11 @@
+{
+    "name": "02【动态】",
+    "preview": "@/imgs/preview.webp",
+    "description": "暗色紫金风格动态背景主题",
+    "author": "脑黑金GS998",
+    "version": "1.0.1",
+    "tags": ["动态", "暗色"],
+    "iframe": {
+        "app": "@/iframes/app.html"
+    }
+}
