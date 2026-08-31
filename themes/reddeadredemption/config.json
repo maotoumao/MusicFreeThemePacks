@@ -1,0 +1,12 @@
+  {
+      "name": "RDR2",
+      "preview": "@/imgs/rdr.webp",
+      "description": "static",
+      "author": "yzxISUya",
+      "version": "0.0.1",
+      "authorUrl": "https://github.com/yzxISUya",
+      "tags": [
+            "游戏",
+            "暗色"
+        ]
+  }
