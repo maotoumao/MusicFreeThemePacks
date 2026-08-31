@@ -1,0 +1,62 @@
+:root {
+    --color-bg-base: rgb(20, 35, 20);
+    --color-bg-sidebar: rgba(21, 62, 23, 0.65);
+    --color-bg-player: rgba(7, 27, 9, 0.92);
+    --color-bg-surface: rgba(255, 255, 255, 0.04);
+    --color-bg-surface-raised: rgba(255, 255, 255, 0.08);
+    --color-bg-drawer: rgba(22, 38, 22, 0.95);
+    --color-bg-overlay: rgba(20, 35, 20, 0.8);
+    --color-bg-modal: rgb(14, 28, 14);
+    --color-bg-popover: rgba(14, 28, 14, 0.95);
+    --color-bg-fullscreen: rgb(20, 35, 20);
+    --color-bg-placeholder: rgb(40, 65, 40);
+
+    --color-fill-brand: rgb(76, 175, 80);
+    --color-fill-brand-hover: rgba(76, 175, 80, 0.85);
+    --color-fill-brand-muted: rgba(76, 175, 80, 0.15);
+    --color-fill-neutral: rgba(255, 255, 255, 0.1);
+    --color-fill-neutral-hover: rgba(255, 255, 255, 0.16);
+    --color-fill-neutral-active: rgba(255, 255, 255, 0.2);
+    --color-fill-subtle: rgba(255, 255, 255, 0.05);
+    --color-fill-subtle-hover: rgba(255, 255, 255, 0.1);
+
+    --color-text-primary: rgb(255, 255, 255);
+    --color-text-secondary: rgb(255, 255, 100);
+    --color-text-muted: rgba(200, 230, 201, 0.6);
+    --color-text-placeholder: rgba(200, 230, 201, 0.5);
+    --color-text-disabled: rgba(200, 230, 201, 0.3);
+    --color-text-brand: rgb(76, 175, 80);
+    --color-text-on-brand: rgb(255, 255, 255);
+
+    --color-border-default: rgba(255, 255, 255, 0.1);
+    --color-border-subtle: rgba(255, 255, 255, 0.05);
+    --color-border-strong: rgba(255, 255, 255, 0.16);
+    --color-border-focus: rgba(255, 255, 255, 0.2);
+    --color-border-brand: rgba(76, 175, 80, 0.3);
+
+    --shadow-sm: 0 6px 16px rgba(0, 0, 0, 0.15);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.22);
+
+    --bg-image: url("@/imgs/apex.webp");
+    --bg-darkness: 0.55;
+}
+
+body[data-window="main"] {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, var(--bg-darkness, 0.4)),
+      rgba(0, 0, 0, var(--bg-darkness, 0.4))
+    ),
+    var(--bg-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.l-sidebar {
+  backdrop-filter: blur(var(--blur-sm));
+}
+
+.l-player-bar {
+  backdrop-filter: blur(var(--blur-sm));
+}
